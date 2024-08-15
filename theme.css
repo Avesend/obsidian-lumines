@@ -70,6 +70,16 @@ SOFTWARE.
 }
 
 body {
+   /* MODIFICATION: graph-settings */
+   --graph-controls-width: 240px;
+   --graph-node: var(--text-muted);
+   --graph-text: var(--text-normal);
+   --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+   --graph-node-tag: var(--color-accent);
+   --graph-node-unresolved: var(--text-faint);
+   --graph-node-attachment: var(--color-yellow);
+   --graph-node-focused: var(--background-modifier-border-focus);
+
    /* MODIFICATION: callout */
    --callout-radius: 8px;
 
