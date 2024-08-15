@@ -69,6 +69,9 @@ SOFTWARE.
 }
 
 body {
+   /* MODIFICATION: callout */
+   --callout-radius: 8px;
+
    /* MODIFICATION: link-decoration */
    --link-decoration: none;
    --link-decoration-hover: none;
@@ -104,4 +107,25 @@ a.internal-link:hover {
 .nav-file-title:hover,
 .nav-folder-title:hover {
    background: transparent !important;
+}
+
+/* MODIFICATION: callout */
+.callout {
+   border-width: 1px;
+   padding-block: 24px;
+   padding-right: 24px;
+}
+
+.callout-content p,
+.markdown-rendered ul,
+.markdown-rendered ol {
+   margin-bottom: 0;
+}
+
+.callout-content ul li {
+   margin-left: 24px;
+}
+
+.callout-title-inner {
+   margin-left: 4px;
 }
