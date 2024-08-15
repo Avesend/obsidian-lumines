@@ -92,3 +92,16 @@ a.cm-underline:hover {
 a.internal-link:hover {
    color: var(--default-color-100) !important;
 }
+
+/* MODIFICATION: directory */
+.nav-file-title-content,
+.nav-folder-title-content {
+   padding: 2px 2px;
+   margin: -2px 0px;
+}
+
+.nav-file-title.is-active,
+.nav-file-title:hover,
+.nav-folder-title:hover {
+   background: transparent !important;
+}
