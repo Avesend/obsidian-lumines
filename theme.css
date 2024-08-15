@@ -67,3 +67,28 @@ SOFTWARE.
    --color-pink: rgb(250, 162, 193);
    --color-gray: rgb(206, 212, 218);
 }
+
+body {
+   /* MODIFICATION: link-decoration */
+   --link-decoration: none;
+   --link-decoration-hover: none;
+   --link-external-decoration: none;
+   --link-external-decoration-hover: none;
+}
+
+/* MODIFICATION: link-animation */
+a.cm-underline {
+   transition: color 0.4s cubic-bezier(0, 0, 0.2, 1) !important;
+}
+
+a.internal-link {
+   transition: color 0.4s cubic-bezier(0, 0, 0.2, 1) !important;
+}
+
+a.cm-underline:hover {
+   color: var(--default-color-100) !important;
+}
+
+a.internal-link:hover {
+   color: var(--default-color-100) !important;
+}
