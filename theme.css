@@ -34,3 +34,36 @@ SOFTWARE.
 
 --------------------------------------------------------------------------------
 */
+
+:root {
+   /* MODIFICATION: default-colors */
+   --default-color-150: #452e7b;
+   --default-color-140: #533793;
+   --default-color-130: #6140ac;
+   --default-color-120: #6e4ac4;
+   --default-color-110: #7c53dd;
+   --default-color-100: #8a5cf5;
+   --default-color-90: #966cf6;
+   --default-color-80: #a17df7;
+   --default-color-70: #ad8df8;
+   --default-color-60: #b99df9;
+   --default-color-50: #c5aefa;
+   --default-color-40: #d0befb;
+   --default-color-30: #dccefc;
+   --default-color-20: #e8defd;
+   --default-color-10: #f3effe;
+   --default-color-00: #ffffff;
+
+   /* MODIFICATION: color-palette */
+   --color-red: rgb(248, 113, 113);
+   --color-orange: rgb(254, 163, 98);
+   --color-yellow: rgb(255, 224, 102);
+   --color-lime: rgb(190, 242, 100);
+   --color-green: rgb(105, 219, 124);
+   --color-cyan: rgb(102, 217, 232);
+   --color-blue: rgb(77, 171, 247);
+   --color-indigo: rgb(129, 140, 248);
+   --color-violet: rgb(159, 143, 239);
+   --color-pink: rgb(250, 162, 193);
+   --color-gray: rgb(206, 212, 218);
+}
