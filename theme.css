@@ -88,6 +88,10 @@ body {
    --link-decoration-hover: none;
    --link-external-decoration: none;
    --link-external-decoration-hover: none;
+
+   /* MODIFICATION: done-checkbox */
+   --checklist-done-decoration: none;
+   --checklist-done-color: rgb(80, 80, 80) !important;
 }
 
 /* MODIFICATION: link-animation */
@@ -105,6 +109,12 @@ a.cm-underline:hover {
 
 a.internal-link:hover {
    color: var(--default-color-100) !important;
+}
+
+/* MODIFICATION: done-checkbox */
+.cm-list-1,
+.task-list-item {
+   transition: all 0.3s ease-in;
 }
 
 /* MODIFICATION: directory */
@@ -937,27 +947,6 @@ body:not(.accent-headings-off) {
    --h4-color: var(--default-color-40);
    --h5-color: var(--default-color-20);
    --h6-color: var(--default-color-00);
-}
-
-/* MODIFICATION: completed-task */
-.cm-list-1,
-.task-list-item {
-   transition: all 0.3s ease-in;
-}
-
-.HyperMD-task-line[data-task="x"] .cm-list-1 {
-   display: inline-block;
-   text-decoration: none;
-   position: relative;
-   color: rgb(77, 77, 77) !important;
-   transition: all 0.3s ease-in;
-}
-
-.task-list-item.is-checked {
-   text-decoration: none;
-   position: relative;
-   color: rgb(77, 77, 77) !important;
-   transition: all 0.3s ease-in;
 }
 
 /* MODIFICATION: directory-colors */
