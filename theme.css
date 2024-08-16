@@ -1706,7 +1706,7 @@ ul.dataview-ul {
       height: 6px;
       opacity: 0.1;
       border-radius: 50%;
-      background-color: #dadada;
+      background-color: rgb(179, 179, 179);
       transform: translateY(-50%);
       transition: opacity .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
    }
@@ -1714,6 +1714,45 @@ ul.dataview-ul {
    .tree-item-self.is-clickable.nav-file-title.tappable:hover::after,
    .tree-item-self.is-clickable.nav-file-title.tappable.is-active::after {
       opacity: 1;
+   }
+
+/* MODIFICATION: word-counter */
+   .status-bar {
+      border-style: none;
+      background-color: transparent;
+   }
+
+/* MODIFICATION: icon-open-vault */
+/* MODIFICATION: vault-icon-up-down */
+/* MODIFICATION: search-plugin-empty-result */
+   .svg-icon.open-vault,
+   .svg-icon.lucide-chevrons-up-down,
+   .search-result-container.mod-global-search .search-empty-state {
+      display: none;
+   }
+
+/* MODIFICATION: add-property-button */
+   .metadata-add-button.text-icon-button,
+   .metadata-add-button.text-icon-button:hover,
+   .metadata-add-button.text-icon-button:focus,
+   .metadata-add-button.text-icon-button:active {
+      color: rgb(179, 179, 179);
+      cursor: pointer;
+      background-color: transparent;
+   }
+
+/* MODIFICATION: outline-properties */
+   .metadata-property,
+   .metadata-property:hover,
+   .metadata-property:focus,
+   .metadata-property:active {
+      box-shadow: none;
+   }
+
+/* MODIFICATION: vault-name */
+   .workspace-drawer-vault-switcher:hover {
+      cursor: pointer;
+      background: transparent !important;
    }
 }
 
@@ -1738,7 +1777,7 @@ ul.dataview-ul {
       height: 6px;
       opacity: 0.1;
       border-radius: 50%;
-      background-color: #dadada;
+      background-color: rgb(179, 179, 179);
       transform: translateY(-50%);
       transition: opacity .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
    }
