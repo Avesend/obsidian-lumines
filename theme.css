@@ -1716,3 +1716,34 @@ ul.dataview-ul {
       opacity: 1;
    }
 }
+
+/* MODIFICATION: mobile-media-query */
+@media (max-width: 768px) {
+/* MODIFICATION: mobile-tracker */
+   .nav-file-title {
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: 24px;
+      padding-right: 34px !important;
+   }
+
+   .nav-file-title::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 6px;
+      height: 6px;
+      opacity: 0.1;
+      border-radius: 50%;
+      background-color: #dadada;
+      transform: translateY(-50%);
+      transition: opacity .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+   }
+
+   .nav-file-title.is-active::after {
+      opacity: 1;
+   }
+}
