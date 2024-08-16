@@ -1785,4 +1785,61 @@ ul.dataview-ul {
    .nav-file-title.is-active::after {
       opacity: 1;
    }
+
+/* MODIFICATION: calendar-fix */
+   .title.svelte-1vwr9dd {
+      padding-left: 5px;
+   }
+
+   .calendar.svelte-pcimu8 {
+      margin-left: -4px;
+   }
+
+   .right-nav.svelte-1vwr9dd {
+      margin-right: 4px;
+   }
+
+/* MODIFICATION: right-sidebar-title */
+   .workspace-drawer-header-name-text {
+      white-space: nowrap;
+   }
+
+/* MODIFICATION: active-tab-chevron */
+   .workspace-drawer-active-tab-chevron {
+      display: none;
+   }
+
+/* MODIFICATION: active-tab-background */
+   .workspace-drawer-active-tab-header,
+   .workspace-drawer-active-tab-header:hover,
+   .workspace-drawer-active-tab-header:focus,
+   .workspace-drawer-active-tab-header:active {
+      background-color: transparent;
+   }
+
+/* MODIFICATION: search-plugin-empty-result */
+   .workspace-drawer-active-tab-content .workspace-leaf-content[data-type="search"] .search-empty-state {
+      display: none;
+   }
+
+/* MODIFICATION: outline-workspace */
+   .tree-item-self.is-clickable.nav-file-title.tappable,
+   .tree-item-self.is-clickable.nav-file-title.tappable:hover,
+   .tree-item-self.is-clickable.nav-file-title.tappable:active,
+   .tree-item-self.is-clickable.nav-file-title.tappable:focus-visible {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background: transparent;
+   }
+
+   .tree-item-self.is-clickable.mod-collapsible.nav-folder-title,
+   .tree-item-self.is-clickable.mod-collapsible.nav-folder-title:hover,
+   .tree-item-self.is-clickable.mod-collapsible.nav-folder-title:active,
+   .tree-item-self.is-clickable.mod-collapsible.nav-folder-title:focus-visible {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background: transparent;
+   }
 }
