@@ -926,7 +926,7 @@ body:not(.default-font-color) span:not(.cm-highlight).cm-em {
 
 .nav-file-tag {
    margin-left: auto;
-   color: var(--color-accent);
+   color: var(--default-color-40);
 }
 
 /* MODIFICATION: heading-colors */
@@ -958,4 +958,73 @@ body:not(.accent-headings-off) {
    position: relative;
    color: rgb(77, 77, 77) !important;
    transition: all 0.3s ease-in;
+}
+
+/* MODIFICATION: directory-colors */
+.nav-folder:nth-of-type(1) .nav-folder-title {
+   color: var(--default-color-100);
+}
+
+.nav-folder:nth-of-type(2) .nav-folder-title {
+   color: var(--default-color-90);
+}
+
+.nav-folder:nth-of-type(3) .nav-folder-title {
+   color: var(--default-color-80);
+}
+
+.nav-folder:nth-of-type(4) .nav-folder-title {
+   color: var(--default-color-70);
+}
+
+.nav-folder:nth-of-type(5) .nav-folder-title {
+   color: var(--default-color-60);
+}
+
+.nav-folder:nth-of-type(6) .nav-folder-title {
+   color: var(--default-color-50);
+}
+
+.nav-folder:nth-of-type(7) .nav-folder-title {
+   color: var(--default-color-40);
+}
+
+.nav-folder:nth-of-type(8) .nav-folder-title {
+   color: var(--default-color-30);
+}
+
+.nav-folder:nth-of-type(9) .nav-folder-title {
+   color: var(--default-color-20);
+}
+
+.nav-folder:nth-of-type(10) .nav-folder-title {
+   color: var(--default-color-10);
+}
+
+.nav-folder:nth-of-type(11) .nav-folder-title {
+   color: var(--default-color-00);
+}
+
+.nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: var(--default-color-00);
+}
+
+.nav-folder-title[data-path^="01 – "] {
+   color: var(--default-color-100) !important;
+}
+
+.nav-folder-title[data-path^="02 – "] {
+   color: var(--default-color-80) !important;
+}
+
+.nav-folder-title[data-path^="03 – "] {
+   color: var(--default-color-60) !important;
+}
+
+.nav-folder-title[data-path^="04 – "] {
+   color: var(--default-color-40) !important;
+}
+
+.nav-file-title[data-path^="05 – "] {
+   color: var(--default-color-20) !important;
 }
