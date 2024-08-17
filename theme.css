@@ -94,6 +94,31 @@ SOFTWARE.
    }
 }
 
+.theme-light {
+   --color-base-00: rgb(249, 249, 249);
+   --color-base-10: rgb(245, 245, 245);
+   --color-base-20: rgb(241, 241, 241);
+   --color-base-25: rgb(237, 237, 237);
+   --color-base-30: rgb(233, 233, 233);
+   --color-base-35: rgb(229, 229, 229);
+   --color-base-40: rgb(225, 225, 225);
+   --color-base-50: rgb(140, 140, 140);
+   --color-base-60: rgb(80, 80, 80);
+   --color-base-70: rgb(73, 73, 73);
+   --color-base-100: rgb(70, 70, 70);
+
+   --background-secondary: rgb(239, 239, 239);
+   --background-secondary-alt: rgb(233, 233, 233);
+   --background-primary: rgb(249, 249, 249);
+   --background-primary-alt: rgb(239, 239, 239);
+   --active-bg: var(--nav-item-background-active);
+
+   .dataview.dataview-error {
+      color: var(--color-red);
+      background-color: rgb(249, 249, 249);
+   }
+}
+
 body {
    /* MODIFICATION: graph-settings */
    --graph-controls-width: 240px;
@@ -1756,7 +1781,6 @@ ul.dataview-ul {
    margin-left: var(--size-4-1);
 }
 
-/* MODIFICATION: property[data-property-key="btc"] */
 /* MODIFICATION: property[data-property-key="bitcoin"] */
 .metadata-property[data-property-key="btc"] .metadata-property-icon svg,
 .metadata-property[data-property-key="bitcoin"] .metadata-property-icon svg {
@@ -3203,23 +3227,20 @@ Implementation of the MODIFICATIONS below in your Obsidian vault at discretion!
 /* MODIFICATION: mobile-media-query */
 @media (max-width: 768px) {
 /* MODIFICATION: workspace */
-   /* MODIFICATION: workspace-icon */
-      /* .workspace-drawer-active-tab-icon {
-         display: none;
-      } */
+   /* .workspace-drawer-active-tab-icon {
+      display: none;
+   }
 
-   /* MODIFICATION: workspace-title */
-      /* .workspace-drawer-active-tab-title {
-         color: var(--text-muted);
-         text-align: center;
-         text-transform: uppercase;
-      } */
+   .workspace-drawer-active-tab-title {
+      color: var(--text-muted);
+      text-align: center;
+      text-transform: uppercase;
+   }
 
-   /* MODIFICATION: workspace-spacing */
-      /* .workspace-drawer-active-tab-header.tappable {
-         margin-block: 0px;
-         padding-block: 0px;
-      } */
+   .workspace-drawer-active-tab-header.tappable {
+      margin-block: 0px;
+      padding-block: 0px;
+   } */
 
 /* MODIFICATION: order-navbar */
    /* .mobile-navbar-actions {
@@ -3246,7 +3267,7 @@ Implementation of the MODIFICATIONS below in your Obsidian vault at discretion!
       order: 4;
    } */
 
-   /* MODIFICATION: reading-view-button */
+/* MODIFICATION: reading-view-button */
    /* .view-actions .clickable-icon svg.lucide-edit-3,
    .view-actions .clickable-icon svg.lucide-book-open {
       pointer-events: none;
