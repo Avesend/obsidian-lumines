@@ -2566,6 +2566,557 @@ ul.dataview-ul {
    margin-left: var(--size-4-1);
 }
 
+/* MODIFICATION: cssclasses */
+/* MODIFICATION: timestamp-(color) */
+   .timestamp-red :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-red);
+   }
+
+   .timestamp-orange :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-orange);
+   }
+
+   .timestamp-yellow :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-yellow);
+   }
+
+   .timestamp-lime :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-lime);
+   }
+
+   .timestamp-green :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-green);
+   }
+
+   .timestamp-cyan :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-cyan);
+   }
+
+   .timestamp-skye :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-skye);
+   }
+
+   .timestamp-blue :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-blue);
+   }
+
+   .timestamp-indigo :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-indigo);
+   }
+
+   .timestamp-violet :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-violet);
+   }
+
+   .timestamp-pink :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-pink);
+   }
+
+   .timestamp-accent :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-accent);
+   }
+
+/* MODIFICATION: timestamp-position */
+   .timestamp-start :is(h6, .HyperMD-header.HyperMD-header-6) {
+      font-size: 1.150rem;
+      font-weight: 625;
+      text-align: left;
+   }
+
+   .timestamp-center :is(h6, .HyperMD-header.HyperMD-header-6) {
+      font-size: 1.150rem;
+      font-weight: 625;
+      text-align: center;
+   }
+
+   .timestamp-end :is(h6, .HyperMD-header.HyperMD-header-6) {
+      font-size: 1.150rem;
+      font-weight: 625;
+      text-align: right;
+   }
+
+/* MODIFICATION: quote-(color) */
+   .quote-red .HyperMD-quote:before {
+      border-left-color: var(--color-red) !important;
+   }
+
+   .quote-red .cm-blockquote-border:before {
+      border-left-color: var(--color-red) !important;
+   }
+
+   .quote-orange .HyperMD-quote:before {
+      border-left-color: var(--color-orange) !important;
+   }
+
+   .quote-orange .cm-blockquote-border:before {
+      border-left-color: var(--color-orange) !important;
+   }
+
+   .quote-yellow .HyperMD-quote:before {
+      border-left-color: var(--color-yellow) !important;
+   }
+
+   .quote-yellow .cm-blockquote-border:before {
+      border-left-color: var(--color-yellow) !important;
+   }
+
+   .quote-lime .HyperMD-quote:before {
+      border-left-color: var(--color-lime) !important;
+   }
+
+   .quote-lime .cm-blockquote-border:before {
+      border-left-color: var(--color-lime) !important;
+   }
+
+   .quote-green .HyperMD-quote:before {
+      border-left-color: var(--color-green) !important;
+   }
+
+   .quote-green .cm-blockquote-border:before {
+      border-left-color: var(--color-green) !important;
+   }
+
+   .quote-cyan .HyperMD-quote:before {
+      border-left-color: var(--color-cyan) !important;
+   }
+
+   .quote-cyan .cm-blockquote-border:before {
+      border-left-color: var(--color-cyan) !important;
+   }
+
+   .quote-sky .HyperMD-quote:before {
+      border-left-color: var(--color-sky) !important;
+   }
+
+   .quote-sky .cm-blockquote-border:before {
+      border-left-color: var(--color-sky) !important;
+   }
+
+   .quote-blue .HyperMD-quote:before {
+      border-left-color: var(--color-blue) !important;
+   }
+
+   .quote-blue .cm-blockquote-border:before {
+      border-left-color: var(--color-blue) !important;
+   }
+
+   .quote-indigo .HyperMD-quote:before {
+      border-left-color: var(--color-indigo) !important;
+   }
+
+   .quote-indigo .cm-blockquote-border:before {
+      border-left-color: var(--color-indigo) !important;
+   }
+
+   .quote-violet .HyperMD-quote:before {
+      border-left-color: var(--color-violet) !important;
+   }
+
+   .quote-violet .cm-blockquote-border:before {
+      border-left-color: var(--color-violet) !important;
+   }
+
+   .quote-pink .HyperMD-quote:before {
+      border-left-color: var(--color-pink) !important;
+   }
+
+   .quote-pink .cm-blockquote-border:before {
+      border-left-color: var(--color-pink) !important;
+   }
+
+   .quote-accent .HyperMD-quote:before {
+      border-left-color: var(--color-accent) !important;
+   }
+
+   .quote-accent .cm-blockquote-border:before {
+      border-left-color: var(--color-accent) !important;
+   }
+
+/* MODIFICATION: h1-h6-left */
+   .h1-left :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h1-start :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-left :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h2-start :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-left :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h3-start :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-left :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h4-start :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-left :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h5-start :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-left :is(h6, .HyperMD-header.HyperMD-header-6),
+   .h6-start :is(h6, .HyperMD-header.HyperMD-header-6) {
+      text-align: left !important;
+   }
+
+/* MODIFICATION: h1-h6-center */
+   .h1-center :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-center :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-center :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-center :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-center :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-center :is(h6, .HyperMD-header.HyperMD-header-6) {
+      text-align: center !important;
+   }
+
+/* MODIFICATION: h1-h6-right */
+   .h1-right :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h1-end :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-right :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h2-end :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-right :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h3-end :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-right :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h4-end :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-right :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h5-end :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-right :is(h6, .HyperMD-header.HyperMD-header-6),
+   .h6-end :is(h6, .HyperMD-header.HyperMD-header-6) {
+      text-align: right !important;
+   }
+
+/* MODIFICATION: h1-h6-(color) */
+   .h1-red :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-red :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-red :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-red :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-red :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-red :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-red) !important;
+   }
+
+   .h1-orange :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-orange :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-orange :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-orange :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-orange :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-orange :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-orange) !important;
+   }
+
+   .h1-yellow :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-yellow :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-yellow :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-yellow :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-yellow :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-yellow :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-yellow) !important;
+   }
+
+   .h1-lime :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-lime :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-lime :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-lime :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-lime :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-lime :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-lime) !important;
+   }
+
+   .h1-green :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-green :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-green :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-green :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-green :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-green :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-green) !important;
+   }
+
+   .h1-cyan :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-cyan :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-cyan :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-cyan :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-cyan :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-cyan :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-cyan) !important;
+   }
+
+   .h1-sky :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-sky :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-sky :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-sky :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-sky :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-sky :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-sky) !important;
+   }
+
+   .h1-blue :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-blue :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-blue :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-blue :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-blue :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-blue :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-blue) !important;
+   }
+
+   .h1-indigo :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-indigo :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-indigo :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-indigo :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-indigo :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-indigo :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-indigo) !important;
+   }
+
+   .h1-violet :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-violet :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-violet :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-violet :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-violet :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-violet :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-violet) !important;
+   }
+
+   .h1-pink :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-pink :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-pink :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-pink :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-pink :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-pink :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-pink) !important;
+   }
+
+   .h1-accent :is(h1, .HyperMD-header.HyperMD-header-1),
+   .h2-accent :is(h2, .HyperMD-header.HyperMD-header-2),
+   .h3-accent :is(h3, .HyperMD-header.HyperMD-header-3),
+   .h4-accent :is(h4, .HyperMD-header.HyperMD-header-4),
+   .h5-accent :is(h5, .HyperMD-header.HyperMD-header-5),
+   .h6-accent :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--color-accent) !important;
+   }
+
+/* MODIFICATION: link-(color) */
+/* MODIFICATION: a-(color) */
+   .link-red a,
+   .a-red a {
+      color: var(--color-red) !important;
+   }
+
+   .link-orange a,
+   .a-orange a {
+      color: var(--color-orange) !important;
+   }
+
+   .link-yellow a,
+   .a-yellow a {
+      color: var(--color-yellow) !important;
+   }
+
+   .link-lime a,
+   .a-lime a {
+      color: var(--color-lime) !important;
+   }
+
+   .link-green a,
+   .a-green a {
+      color: var(--color-green) !important;
+   }
+
+   .link-cyan a,
+   .a-cyan a {
+      color: var(--color-cyan) !important;
+   }
+
+   .link-sky a,
+   .a-sky a {
+      color: var(--color-sky) !important;
+   }
+
+   .link-blue a,
+   .a-blue a {
+      color: var(--color-blue) !important;
+   }
+
+   .link-indigo a,
+   .a-indigo a {
+      color: var(--color-indigo) !important;
+   }
+
+   .link-violet a,
+   .a-violet a {
+      color: var(--color-violet) !important;
+   }
+
+   .link-pink a,
+   .a-pink a {
+      color: var(--color-pink) !important;
+   }
+
+   .link-accent a,
+   .a-accent a {
+      color: var(--color-accent) !important;
+   }
+
+/* MODIFICATION: italic-(color) */
+/* MODIFICATION: em-(color) */
+/* MODIFICATION: i-(color) */
+   .italic-red .cm-em,
+   .em-red .cm-em,
+   .i-red .cm-em {
+      color: var(--color-red) !important;
+   }
+
+   .italic-orange .cm-em,
+   .em-orange .cm-em,
+   .i-orange .cm-em {
+      color: var(--color-orange) !important;
+   }
+
+   .italic-yellow .cm-em,
+   .em-yellow .cm-em,
+   .i-yellow .cm-em {
+      color: var(--color-yellow) !important;
+   }
+
+   .italic-lime .cm-em,
+   .em-lime .cm-em,
+   .i-lime .cm-em {
+      color: var(--color-lime) !important;
+   }
+
+   .italic-green .cm-em,
+   .em-green .cm-em,
+   .i-green .cm-em {
+      color: var(--color-green) !important;
+   }
+
+   .italic-cyan .cm-em,
+   .em-cyan .cm-em,
+   .i-cyan .cm-em {
+      color: var(--color-cyan) !important;
+   }
+
+   .italic-sky .cm-em,
+   .em-sky .cm-em,
+   .i-sky .cm-em {
+      color: var(--color-sky) !important;
+   }
+
+   .italic-blue .cm-em,
+   .em-blue .cm-em,
+   .i-blue .cm-em {
+      color: var(--color-blue) !important;
+   }
+
+   .italic-indigo .cm-em,
+   .em-indigo .cm-em,
+   .i-indigo .cm-em {
+      color: var(--color-indigo) !important;
+   }
+
+   .italic-violet .cm-em,
+   .em-violet .cm-em,
+   .i-violet .cm-em {
+      color: var(--color-violet) !important;
+   }
+
+   .italic-pink .cm-em,
+   .em-pink .cm-em,
+   .i-pink .cm-em {
+      color: var(--color-pink) !important;
+   }
+
+   .italic-accent .cm-em,
+   .em-accent .cm-em,
+   .i-accent .cm-em {
+      color: var(--color-accent) !important;
+   }
+
+/* MODIFICATION: bold-(color) */
+/* MODIFICATION: strong-(color) */
+/* MODIFICATION: b-(color) */
+   .bold-red .cm-strong,
+   .strong-red .cm-strong,
+   .b-red .cm-strong {
+      color: var(--color-red) !important;
+   }
+
+   .bold-orange .cm-strong,
+   .strong-orange .cm-strong,
+   .b-orange .cm-strong {
+      color: var(--color-orange) !important;
+   }
+
+   .bold-yellow .cm-strong,
+   .strong-yellow .cm-strong,
+   .b-yellow .cm-strong {
+      color: var(--color-yellow) !important;
+   }
+
+   .bold-lime .cm-strong,
+   .strong-lime .cm-strong,
+   .b-lime .cm-strong {
+      color: var(--color-lime) !important;
+   }
+
+   .bold-green .cm-strong,
+   .strong-green .cm-strong,
+   .b-green .cm-strong {
+      color: var(--color-green) !important;
+   }
+
+   .bold-cyan .cm-strong,
+   .strong-cyan .cm-strong,
+   .b-cyan .cm-strong {
+      color: var(--color-cyan) !important;
+   }
+
+   .bold-sky .cm-strong,
+   .strong-sky .cm-strong,
+   .b-sky .cm-strong {
+      color: var(--color-sky) !important;
+   }
+
+   .bold-blue .cm-strong,
+   .strong-blue .cm-strong,
+   .b-blue .cm-strong {
+      color: var(--color-blue) !important;
+   }
+
+   .bold-indigo .cm-strong,
+   .strong-indigo .cm-strong,
+   .b-indigo .cm-strong {
+      color: var(--color-indigo) !important;
+   }
+
+   .bold-violet .cm-strong,
+   .strong-violet .cm-strong,
+   .b-violet .cm-strong {
+      color: var(--color-violet) !important;
+   }
+
+   .bold-pink .cm-strong,
+   .strong-pink .cm-strong,
+   .b-pink .cm-strong {
+      color: var(--color-pink) !important;
+   }
+
+   .bold-accent .cm-strong,
+   .strong-accent .cm-strong,
+   .b-accent .cm-strong {
+      color: var(--color-accent) !important;
+   }
+
+/* MODIFICATION: classic-titles */
+   .classic-titles :is(h1, h2, h3, h4, h5, h6,
+      .HyperMD-header.HyperMD-header-1,
+      .HyperMD-header.HyperMD-header-2,
+      .HyperMD-header.HyperMD-header-3,
+      .HyperMD-header.HyperMD-header-4,
+      .HyperMD-header.HyperMD-header-5,
+      .HyperMD-header.HyperMD-header-6) {
+         padding-block: 8px;
+         font-weight: 625;
+         font-size: 1.125rem;
+         color: var(--color-accent) !important;
+   }
+
+   .classic-titles .cm-em,
+   .classic-titles .cm-strong,
+   .classic-titles :is(h2, h4,
+      .HyperMD-header.HyperMD-header-2,
+      .HyperMD-header.HyperMD-header-4) {
+         color: var(--syntax-default) !important;
+   }
+
 /* MODIFICATION: desktop-media-query */
 @media (min-width: 768px) {
 /* MODIFICATION: desktop-tracker */
