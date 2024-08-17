@@ -1025,181 +1025,78 @@ ul.dataview-ul {
    margin-block-start: 0em !important;
 }
 
-.dataview.table-view-table {
-   margin-bottom: 0;
-   table-layout: fixed;
-   --cell-padding-x: 1rem;
-   --cell-padding-y: 10px;
-}
-
-.dataview.table-view-table>thead {
-   padding-left: 1rem;
-}
-
-.dataview.table-view-table>thead>tr>th {
+.dataview.table-view-table > thead > tr > th {
    cursor: default;
    user-select: none;
    color: var(--text-normal);
    background-color: var(--color-base-00);
    padding: 6px var(--cell-padding-x) 0.5rem;
-   border-bottom: 1px solid var(--color-base-35);
+   border-bottom: 1px solid var(--color-base-25);
 }
 
-.dataview.table-view-table>thead>tr>th span {
-   cursor: default;
+.block-language-dataview.node-insert-event,
+.cm-preview-code-block.cm-embed-block.markdown-rendered,
+.cm-preview-code-block.cm-embed-block.markdown-rendered:hover {
+   border-radius: 8px !important;
+   outline: var(--color-base-25) solid 1px;
 }
 
-.dataview.table-view-table>thead>tr>th>.dataview.small-text {
-   opacity: 0.5;
-   color: inherit;
-   cursor: default;
-   margin-left: 8px;
-   user-select: none;
-   font-weight: normal;
+.dataview.table-view-table {
+   margin-block: 0;
+   table-layout: fixed;
+   --cell-padding-x: 1rem;
+   --cell-padding-y: 10px;
 }
 
-.dataview.table-view-table>thead>tr>th>.dataview.small-text::before {
+.dataview.table-view-table > thead {
+   padding-left: 1rem;
+}
+
+.dataview.table-view-table > thead > tr > th > .dataview.small-text::before {
    content: unset;
 }
 
-.dataview.table-view-table>thead>tr>th>.dataview.small-text::after {
-   content: unset;
-}
-
-.dataview.table-view-table>tbody>tr {
-   background-color: var(--color-base-10);
-}
-
-.dataview.table-view-table>tbody>tr:hover {
+.dataview.table-view-table > tbody > tr,
+.dataview.table-view-table > tbody > tr:hover {
    background-color: var(--color-base-10) !important;
 }
 
-.dataview.table-view-table>tbody>tr:nth-child(2n),
-.dataview.table-view-table>tbody>tr:hover:nth-child(2n) {
-   background-color: var(--color-base-05) !important;
+.dataview.table-view-table > tbody > tr:nth-child(2n),
+.dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
+   background-color: var(--color-base-00) !important;
 }
 
-.dataview.table-view-table>tbody>tr>td {
+.dataview.table-view-table > tbody > tr > td {
    cursor: default;
    padding: var(--cell-padding-y) var(--cell-padding-x);
 }
 
-.dataview.table-view-table>tbody>tr>td>span {
-   cursor: default;
-}
-
-.dataview.table-view-table>tbody>tr:first-child>td {
+.dataview.table-view-table > tbody > tr:first-child > td {
    padding-top: 10px;
 }
 
-.dataview.table-view-table>tbody>tr:last-child>td {
+.dataview.table-view-table > tbody > tr:last-child > td {
    padding-bottom: 10px;
-}
-
-.dataview.list-view-ul {
-   padding: 0;
-   margin: 0.4rem 1.75rem;
-}
-
-.dataview.dataview-container>.contains-task-list {
-   user-select: none;
-   padding-left: 0;
-   margin: 0.75em 0.5em 0.75em 1em;
-}
-
-.dataview .contains-task-list {
-   margin: 0;
-   padding: 0 0 0 1.5em;
-}
-
-.dataview.task-list-item,
-.dataview.task-list-basic-item {
-   margin: 0;
-   cursor: pointer;
-   transition: none;
-   text-decoration: none;
-}
-
-.dataview.task-list-item:not(:has(.contains-task-list)),
-.dataview.task-list-basic-item:not(:has(.contains-task-list)) {
-   display: flex;
-}
-
-.dataview.task-list-item:not(:has(.contains-task-list))>input,
-.dataview.task-list-basic-item:not(:has(.contains-task-list))>input {
-   margin-top: 0.4rem;
-}
-
-.dataview.task-list-item input,
-.dataview.task-list-basic-item input {
-   margin-left: 0 !important;
-}
-
-.dataview.task-list-item>.contains-task-list,
-.dataview.task-list-basic-item>.contains-task-list {
-   flex-grow: 1;
-}
-
-.dataview.task-list-item:hover,
-.dataview.task-list-basic-item:hover {
-   box-shadow: none;
-   background-color: unset;
-}
-
-.dataview.task-list-item:hover>span,
-.dataview.task-list-basic-item:hover>span {
-   text-decoration: underline;
-}
-
-.dataview-container h4 {
-   font-size: small;
-   padding: 1rem 1rem 0.5rem;
-   margin-block: 0;
-   color: var(--color-base-70);
-   background: var(--color-base-00);
-   border-bottom: 1px solid var(--color-base-35);
-}
-
-.dataview-container h4>.dataview.small-text {
-   opacity: 0.5;
-   color: inherit;
-   cursor: default;
-   user-select: none;
-   font-weight: normal;
-}
-
-.dataview-container h4>.dataview.small-text::before {
-   content: unset;
-}
-
-.dataview-container h4>.dataview.small-text::after {
-   content: unset;
 }
 
 .dataview.result-group {
    padding-left: 0;
-   padding: 0.5rem 0 0.5rem;
-}
-
-.dataview.result-group>.contains-task-list {
-   padding-left: 1rem;
+   padding: .5rem 0 .5rem;
 }
 
 .dataview.dataview-error-box {
-   --stripe-a: var(--color-base-00);
-   --stripe-b: var(--color-base-05);
    border: none;
-   background-image: radial-gradient(transparent, var(--color-base-00) 100%), repeating-linear-gradient(45deg, var(--stripe-a) 0px, var(--stripe-a) 10px, var(--stripe-b) 10px, var(--stripe-b) 20px);
 }
 
-.dataview.dataview-error-box>.dataview-error-message {
+.dataview.dataview-error-box > .dataview-error-message {
    font-size: small;
    font-weight: bold;
-   color: var(--color-base-40);
+   color: var(--color-base-50);
 }
 
 .dataview.dataview-error {
    color: var(--color-red);
+   background-color: rgb(33, 33, 33);
 }
 
 /* MODIFICATION: default-property-icons */
