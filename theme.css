@@ -69,54 +69,104 @@ SOFTWARE.
    --color-gray: rgb(206, 212, 218);
 }
 
-.theme-dark {
-   --color-base-00: rgb(33, 33, 33);
-   --color-base-10: rgb(36, 36, 36);
-   --color-base-20: rgb(39, 39, 39);
-   --color-base-25: rgb(42, 42, 42);
-   --color-base-30: rgb(48, 48, 48);
-   --color-base-35: rgb(51, 51, 51);
-   --color-base-40: rgb(54, 54, 54);
-   --color-base-50: rgb(90, 90, 90);
-   --color-base-60: rgb(140, 140, 140);
-   --color-base-70: rgb(190, 190, 190);
-   --color-base-100: rgb(193, 193, 193);
+/* MODIFICATION: desktop-media-query */
+@media (min-width: 768px) {
+/* MODIFICATION: desktop-theme-dark */
+   .theme-dark {
+      --color-base-00: rgb(33, 33, 33);
+      --color-base-10: rgb(36, 36, 36);
+      --color-base-20: rgb(39, 39, 39);
+      --color-base-25: rgb(42, 42, 42);
+      --color-base-30: rgb(48, 48, 48);
+      --color-base-35: rgb(51, 51, 51);
+      --color-base-40: rgb(54, 54, 54);
+      --color-base-50: rgb(90, 90, 90);
+      --color-base-60: rgb(140, 140, 140);
+      --color-base-70: rgb(190, 190, 190);
+      --color-base-100: rgb(193, 193, 193);
 
-   --background-secondary: rgb(40, 40, 40);
-   --background-secondary-alt: rgb(48, 48, 48);
-   --background-primary: rgb(33, 33, 33);
-   --background-primary-alt: rgb(40, 40, 40);
-   --active-bg: var(--nav-item-background-active);
+      --background-secondary: rgb(40, 40, 40);
+      --background-secondary-alt: rgb(48, 48, 48);
+      --background-primary: rgb(33, 33, 33);
+      --background-primary-alt: rgb(40, 40, 40);
+      --active-bg: var(--nav-item-background-active);
 
    .dataview.dataview-error {
       color: var(--color-red);
       background-color: rgb(33, 33, 33);
    }
+
+   .dataview.table-view-table > tbody > tr:nth-child(2n),
+   .dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
+      background-color: var(--color-base-00) !important;
+   }
 }
 
-.theme-light {
-   --color-base-00: rgb(249, 249, 249);
-   --color-base-10: rgb(245, 245, 245);
-   --color-base-20: rgb(241, 241, 241);
-   --color-base-25: rgb(237, 237, 237);
-   --color-base-30: rgb(233, 233, 233);
-   --color-base-35: rgb(229, 229, 229);
-   --color-base-40: rgb(225, 225, 225);
-   --color-base-50: rgb(140, 140, 140);
-   --color-base-60: rgb(80, 80, 80);
-   --color-base-70: rgb(73, 73, 73);
-   --color-base-100: rgb(70, 70, 70);
+/* MODIFICATION: desktop-theme-light */
+   .theme-light {
+      --color-base-00: rgb(249, 249, 249);
+      --color-base-10: rgb(245, 245, 245);
+      --color-base-20: rgb(241, 241, 241);
+      --color-base-25: rgb(237, 237, 237);
+      --color-base-30: rgb(233, 233, 233);
+      --color-base-35: rgb(229, 229, 229);
+      --color-base-40: rgb(225, 225, 225);
+      --color-base-50: rgb(140, 140, 140);
+      --color-base-60: rgb(80, 80, 80);
+      --color-base-70: rgb(73, 73, 73);
+      --color-base-100: rgb(70, 70, 70);
 
-   --background-secondary: rgb(239, 239, 239);
-   --background-secondary-alt: rgb(233, 233, 233);
-   --background-primary: rgb(249, 249, 249);
-   --background-primary-alt: rgb(239, 239, 239);
-   --active-bg: var(--nav-item-background-active);
+      --background-secondary: rgb(239, 239, 239);
+      --background-secondary-alt: rgb(233, 233, 233);
+      --background-primary: rgb(249, 249, 249);
+      --background-primary-alt: rgb(239, 239, 239);
+      --active-bg: var(--nav-item-background-active);
 
    .dataview.dataview-error {
       color: var(--color-red);
       background-color: rgb(249, 249, 249);
    }
+
+   .dataview.table-view-table > tbody > tr:nth-child(2n),
+   .dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
+      background-color: var(--color-base-00) !important;
+   }
+}
+}
+
+/* MODIFICATION: mobile-media-query */
+@media (max-width: 768px) {
+/* MODIFICATION: mobile-theme-dark */
+   .theme-dark {
+      --color-base-00: rgb(10, 10, 10);
+      --color-base-10: rgb(13, 13, 13);
+      --color-base-20: rgb(16, 16, 16);
+      --color-base-25: rgb(19, 19, 19);
+      --color-base-30: rgb(22, 22, 22);
+      --color-base-35: rgb(25, 25, 25);
+      --color-base-40: rgb(26, 26, 26);
+      --color-base-50: rgb(62, 62, 62);
+      --color-base-60: rgb(112, 112, 112);
+      --color-base-70: rgb(180, 180, 180);
+      --color-base-100: rgb(182, 182, 182);
+
+      --background-secondary: rgb(24, 24, 24);
+      --background-secondary-alt: rgb(22, 22, 22);
+      --background-primary: rgb(10, 10, 10);
+      --background-primary-alt:  rgb(24, 24, 24);
+      --active-bg: var(--nav-item-background-active);
+
+   .dataview.dataview-error {
+      color: var(--color-red);
+      background-color: rgb(10, 10, 10);
+   }
+
+   .table-view-th,
+   .dataview.table-view-table > tbody > tr:nth-child(2n),
+   .dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
+      background-color: rgb(10, 10, 10) !important;
+   }
+}
 }
 
 body {
@@ -1106,14 +1156,10 @@ ul.dataview-ul {
    content: unset;
 }
 
+/* DON'T FORGET LINES 99, 130, 164! */
 .dataview.table-view-table > tbody > tr,
 .dataview.table-view-table > tbody > tr:hover {
    background-color: var(--color-base-10) !important;
-}
-
-.dataview.table-view-table > tbody > tr:nth-child(2n),
-.dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
-   background-color: var(--color-base-00) !important;
 }
 
 .dataview.table-view-table > tbody > tr > td {
