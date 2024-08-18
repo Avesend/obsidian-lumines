@@ -1,1 +1,5 @@
 ![](assets/readme-lumines.png)
+![](assets/readme-cover-1.png)
+![](assets/readme-cover-2.png)
+![](assets/readme-cover-3.png)
+![](assets/readme-cover-4.png)
