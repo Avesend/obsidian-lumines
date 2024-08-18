@@ -144,16 +144,16 @@ SOFTWARE.
       --color-base-25: rgb(19, 19, 19);
       --color-base-30: rgb(22, 22, 22);
       --color-base-35: rgb(25, 25, 25);
-      --color-base-40: rgb(26, 26, 26);
+      --color-base-40: rgb(28, 28, 28);
       --color-base-50: rgb(62, 62, 62);
-      --color-base-60: rgb(112, 112, 112);
-      --color-base-70: rgb(180, 180, 180);
-      --color-base-100: rgb(182, 182, 182);
+      --color-base-60: rgb(130, 130, 130);
+      --color-base-70: rgb(220, 220, 220);
+      --color-base-100: rgb(220, 220, 220);
 
-      --background-secondary: rgb(24, 24, 24);
+      --background-secondary: rgb(30, 30, 30);
       --background-secondary-alt: rgb(22, 22, 22);
       --background-primary: rgb(10, 10, 10);
-      --background-primary-alt:  rgb(24, 24, 24);
+      --background-primary-alt: rgb(30, 30, 30);
       --active-bg: var(--nav-item-background-active);
 
    .dataview.dataview-error {
