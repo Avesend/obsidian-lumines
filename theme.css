@@ -136,6 +136,11 @@ SOFTWARE.
 
 /* MODIFICATION: mobile-media-query */
 @media (max-width: 768px) {
+body {
+   /* MODIFICATION: graph-settings */
+   --graph-line: var(--color-base-45, var(--background-modifier-border-focus)) !important;
+}
+
 /* MODIFICATION: mobile-theme-dark */
    .theme-dark {
       --color-base-00: rgb(10, 10, 10);
@@ -145,7 +150,8 @@ SOFTWARE.
       --color-base-30: rgb(22, 22, 22);
       --color-base-35: rgb(25, 25, 25);
       --color-base-40: rgb(28, 28, 28);
-      --color-base-50: rgb(62, 62, 62);
+      --color-base-45: rgb(61, 61, 61);
+      --color-base-50: rgb(64, 64, 64);
       --color-base-60: rgb(130, 130, 130);
       --color-base-70: rgb(220, 220, 220);
       --color-base-100: rgb(220, 220, 220);
