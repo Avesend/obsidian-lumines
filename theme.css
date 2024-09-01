@@ -1647,11 +1647,14 @@ ul.dataview-ul {
 }
 
 /* MODIFICATION: property[data-property-key="lock"] */
-.metadata-property[data-property-key="lock"] .metadata-property-icon svg {
+/* MODIFICATION: property[data-property-key="save"] */
+.metadata-property[data-property-key="lock"] .metadata-property-icon svg,
+.metadata-property[data-property-key="save"] .metadata-property-icon svg {
    display: none;
 }
 
-.metadata-property[data-property-key="lock"] .metadata-property-icon::before {
+.metadata-property[data-property-key="lock"] .metadata-property-icon::before,
+.metadata-property[data-property-key="save"] .metadata-property-icon::before {
    content: '';
    display: inline-block;
    width: 18px;
