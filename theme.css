@@ -217,6 +217,11 @@ a.internal-link:hover {
    color: var(--default-color-100) !important;
 }
 
+/* MODIFICATION: breadcrumb */
+.view-header-title-parent {
+   display: none;
+}
+
 /* MODIFICATION: done-checkbox */
 .cm-list-1,
 .task-list-item {
