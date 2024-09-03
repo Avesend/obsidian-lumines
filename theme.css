@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.0
+Lumines Obsidian Version: 1.0.1
 Current Obsidian Version: 1.6.7
 
 --------------------------------------------------------------------------------
@@ -1037,17 +1037,6 @@ body:not(.default-font-color) span:not(.cm-highlight).cm-strong,
 body:not(.default-font-color) em,
 body:not(.default-font-color) span:not(.cm-highlight).cm-em {
    color: var(--color-accent);
-}
-
-/* MODIFICATION: image-tag */
-.tree-item-self.is-clickable.nav-file-title.tappable {
-   display: flex;
-   align-items: center;
-}
-
-.nav-file-tag {
-   margin-left: auto;
-   color: var(--default-color-40);
 }
 
 /* MODIFICATION: heading-colors */
@@ -3101,6 +3090,11 @@ ul.dataview-ul {
          color: var(--syntax-default) !important;
    }
 
+/* MODIFICATION: image-tag */
+   .nav-file-tag {
+      color: var(--default-color-40);
+   }
+
 /* MODIFICATION: desktop-media-query */
 @media (min-width: 768px) {
 /* MODIFICATION: desktop-tracker */
@@ -3129,6 +3123,11 @@ ul.dataview-ul {
    .tree-item-self.is-clickable.nav-file-title.tappable:hover::after,
    .tree-item-self.is-clickable.nav-file-title.tappable.is-active::after {
       opacity: 1;
+   }
+
+/* MODIFICATION: image-tag */
+   .nav-file-tag {
+      margin-right: 24px;
    }
 
 /* MODIFICATION: word-counter */
