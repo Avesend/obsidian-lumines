@@ -2901,82 +2901,60 @@ ul.dataview-ul {
 /* $0062: bold-(color) */
 /* $0062: strong-(color) */
 /* $0062: b-(color) */
-.bold-red .cm-strong,
-.strong-red .cm-strong,
-.b-red .cm-strong {
-   color: var(--color-red) !important;
+.bold-red, .strong-red, .b-red {
+   --bold-color: var(--color-red);
 }
 
-.bold-orange .cm-strong,
-.strong-orange .cm-strong,
-.b-orange .cm-strong {
-   color: var(--color-orange) !important;
+.bold-orange, .strong-orange, .b-orange {
+   --bold-color: var(--color-orange);
 }
 
-.bold-yellow .cm-strong,
-.strong-yellow .cm-strong,
-.b-yellow .cm-strong {
-   color: var(--color-yellow) !important;
+.bold-yellow, .strong-yellow, .b-yellow {
+   --bold-color: var(--color-yellow);
 }
 
-.bold-lime .cm-strong,
-.strong-lime .cm-strong,
-.b-lime .cm-strong {
-   color: var(--color-lime) !important;
+.bold-lime, .strong-lime, .b-lime {
+   --bold-color: var(--color-lime);
 }
 
-.bold-green .cm-strong,
-.strong-green .cm-strong,
-.b-green .cm-strong {
-   color: var(--color-green) !important;
+.bold-green, .strong-green, .b-green {
+   --bold-color: var(--color-green);
 }
 
-.bold-cyan .cm-strong,
-.strong-cyan .cm-strong,
-.b-cyan .cm-strong {
-   color: var(--color-cyan) !important;
+.bold-cyan, .strong-cyan, .b-cyan {
+   --bold-color: var(--color-cyan);
 }
 
-.bold-sky .cm-strong,
-.strong-sky .cm-strong,
-.b-sky .cm-strong {
-   color: var(--color-sky) !important;
+.bold-sky, .strong-sky, .b-sky {
+   --bold-color: var(--color-sky);
 }
 
-.bold-blue .cm-strong,
-.strong-blue .cm-strong,
-.b-blue .cm-strong {
-   color: var(--color-blue) !important;
+.bold-blue, .strong-blue, .b-blue {
+   --bold-color: var(--color-blue);
 }
 
-.bold-indigo .cm-strong,
-.strong-indigo .cm-strong,
-.b-indigo .cm-strong {
-   color: var(--color-indigo) !important;
+.bold-indigo, .strong-indigo, .b-indigo {
+   --bold-color: var(--color-indigo);
 }
 
-.bold-violet .cm-strong,
-.strong-violet .cm-strong,
-.b-violet .cm-strong {
-   color: var(--color-violet) !important;
+.bold-violet, .strong-violet, .b-violet {
+   --bold-color: var(--color-violet);
 }
 
-.bold-pink .cm-strong,
-.strong-pink .cm-strong,
-.b-pink .cm-strong {
-   color: var(--color-pink) !important;
+.bold-pink, .strong-pink, .b-pink {
+   --bold-color: var(--color-pink);
 }
 
-.bold-white .cm-strong,
-.strong-white .cm-strong,
-.b-white .cm-strong {
-   color: var(--color-white) !important;
+.bold-gray, .strong-gray, .b-gray {
+   --bold-color: var(--color-gray);
 }
 
-.bold-accent .cm-strong,
-.strong-accent .cm-strong,
-.b-accent .cm-strong {
-   color: var(--color-accent) !important;
+.bold-white, .strong-white, .b-white {
+   --bold-color: var(--color-white);
+}
+
+.bold-accent, .strong-accent, .b-accent {
+   --bold-color: var(--color-accent);
 }
 
 /* $0063: default-headers */
