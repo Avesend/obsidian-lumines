@@ -2542,69 +2542,60 @@ ul.dataview-ul {
 }
 
 /* $0057: quote-(color) */
-.quote-red .HyperMD-quote:before,
-.quote-red .cm-blockquote-border:before {
-   border-left-color: var(--color-red) !important;
+.quote-red {
+   --blockquote-border-color: var(--color-red);
 }
 
-.quote-orange .HyperMD-quote:before,
-.quote-orange .cm-blockquote-border:before {
-   border-left-color: var(--color-orange) !important;
+.quote-orange {
+   --blockquote-border-color: var(--color-orange);
 }
 
-.quote-yellow .HyperMD-quote:before,
-.quote-yellow .cm-blockquote-border:before {
-   border-left-color: var(--color-yellow) !important;
+.quote-yellow {
+   --blockquote-border-color: var(--color-yellow);
 }
 
-.quote-lime .HyperMD-quote:before,
-.quote-lime .cm-blockquote-border:before {
-   border-left-color: var(--color-lime) !important;
+.quote-lime {
+   --blockquote-border-color: var(--color-lime);
 }
 
-.quote-green .HyperMD-quote:before,
-.quote-green .cm-blockquote-border:before {
-   border-left-color: var(--color-green) !important;
+.quote-green {
+   --blockquote-border-color: var(--color-green);
 }
 
-.quote-cyan .HyperMD-quote:before,
-.quote-cyan .cm-blockquote-border:before {
-   border-left-color: var(--color-cyan) !important;
+.quote-cyan {
+   --blockquote-border-color: var(--color-cyan);
 }
 
-.quote-sky .HyperMD-quote:before,
-.quote-sky .cm-blockquote-border:before {
-   border-left-color: var(--color-sky) !important;
+.quote-sky {
+   --blockquote-border-color: var(--color-sky);
 }
 
-.quote-blue .HyperMD-quote:before,
-.quote-blue .cm-blockquote-border:before {
-   border-left-color: var(--color-blue) !important;
+.quote-blue {
+   --blockquote-border-color: var(--color-blue);
 }
 
-.quote-indigo .HyperMD-quote:before,
-.quote-indigo .cm-blockquote-border:before {
-   border-left-color: var(--color-indigo) !important;
+.quote-indigo {
+   --blockquote-border-color: var(--color-indigo);
 }
 
-.quote-violet .HyperMD-quote:before,
-.quote-violet .cm-blockquote-border:before {
-   border-left-color: var(--color-violet) !important;
+.quote-violet {
+   --blockquote-border-color: var(--color-violet);
 }
 
-.quote-pink .HyperMD-quote:before,
-.quote-pink .cm-blockquote-border:before {
-   border-left-color: var(--color-pink) !important;
+.quote-pink {
+   --blockquote-border-color: var(--color-pink);
 }
 
-.quote-white .HyperMD-quote:before,
-.quote-white .cm-blockquote-border:before {
-   border-left-color: var(--color-white) !important;
+.quote-gray {
+   --blockquote-border-color: var(--color-gray);
 }
 
-.quote-accent .HyperMD-quote:before,
-.quote-accent .cm-blockquote-border:before {
-   border-left-color: var(--color-accent) !important;
+.quote-white {
+   --blockquote-border-color: var(--color-white);
+}
+
+.quote-accent {
+   --blockquote-border-color: var(--color-accent);
 }
 
 /* $0058: h1-h6-(position) */
