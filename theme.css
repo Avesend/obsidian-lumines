@@ -2820,82 +2820,60 @@ ul.dataview-ul {
 /* $0061: italic-(color) */
 /* $0061: em-(color) */
 /* $0061: i-(color) */
-.italic-red .cm-em,
-.em-red .cm-em,
-.i-red .cm-em {
-   color: var(--color-red) !important;
+.italic-red, .em-red, .i-red {
+   --italic-color: var(--color-red);
 }
 
-.italic-orange .cm-em,
-.em-orange .cm-em,
-.i-orange .cm-em {
-   color: var(--color-orange) !important;
+.italic-orange, .em-orange, .i-orange {
+   --italic-color: var(--color-orange);
 }
 
-.italic-yellow .cm-em,
-.em-yellow .cm-em,
-.i-yellow .cm-em {
-   color: var(--color-yellow) !important;
+.italic-yellow, .em-yellow, .i-yellow {
+   --italic-color: var(--color-yellow);
 }
 
-.italic-lime .cm-em,
-.em-lime .cm-em,
-.i-lime .cm-em {
-   color: var(--color-lime) !important;
+.italic-lime, .em-lime, .i-lime {
+   --italic-color: var(--color-lime);
 }
 
-.italic-green .cm-em,
-.em-green .cm-em,
-.i-green .cm-em {
-   color: var(--color-green) !important;
+.italic-green, .em-green, .i-green {
+   --italic-color: var(--color-green);
 }
 
-.italic-cyan .cm-em,
-.em-cyan .cm-em,
-.i-cyan .cm-em {
-   color: var(--color-cyan) !important;
+.italic-cyan, .em-cyan, .i-cyan {
+   --italic-color: var(--color-cyan);
 }
 
-.italic-sky .cm-em,
-.em-sky .cm-em,
-.i-sky .cm-em {
-   color: var(--color-sky) !important;
+.italic-sky, .em-sky, .i-sky {
+   --italic-color: var(--color-sky);
 }
 
-.italic-blue .cm-em,
-.em-blue .cm-em,
-.i-blue .cm-em {
-   color: var(--color-blue) !important;
+.italic-blue, .em-blue, .i-blue {
+   --italic-color: var(--color-blue);
 }
 
-.italic-indigo .cm-em,
-.em-indigo .cm-em,
-.i-indigo .cm-em {
-   color: var(--color-indigo) !important;
+.italic-indigo, .em-indigo, .i-indigo {
+   --italic-color: var(--color-indigo);
 }
 
-.italic-violet .cm-em,
-.em-violet .cm-em,
-.i-violet .cm-em {
-   color: var(--color-violet) !important;
+.italic-violet, .em-violet, .i-violet {
+   --italic-color: var(--color-violet);
 }
 
-.italic-pink .cm-em,
-.em-pink .cm-em,
-.i-pink .cm-em {
-   color: var(--color-pink) !important;
+.italic-pink, .em-pink, .i-pink {
+   --italic-color: var(--color-pink);
 }
 
-.italic-white .cm-em,
-.em-white .cm-em,
-.i-white .cm-em {
-   color: var(--color-white) !important;
+.italic-gray, .em-gray, .i-gray {
+   --italic-color: var(--color-gray);
 }
 
-.italic-accent .cm-em,
-.em-accent .cm-em,
-.i-accent .cm-em {
-   color: var(--color-accent) !important;
+.italic-white, .em-white, .i-white {
+   --italic-color: var(--color-white);
+}
+
+.italic-accent, .em-accent, .i-accent {
+   --italic-color: var(--color-accent);
 }
 
 /* $0062: bold-(color) */
