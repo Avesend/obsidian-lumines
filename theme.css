@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.3.4
+Lumines Obsidian Version: 2.3.5
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -994,8 +994,57 @@ img {
    background-image: none;
 }
 
-/* Modification: folder-title-color */
-/* Modification: folder-title-accent */
+/* Modification: folder-title-color $ style-settings-plugin */
+/* Modification: folder-title-default */
+.nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 100%, rgb(255, 255, 255) 0%);
+}
+
+.nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 90%, rgb(255, 255, 255) 10%);
+}
+
+.nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 80%, rgb(255, 255, 255) 20%);
+}
+
+.nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 70%, rgb(255, 255, 255) 30%);
+}
+
+.nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 60%, rgb(255, 255, 255) 40%);
+}
+
+.nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 50%, rgb(255, 255, 255) 50%);
+}
+
+.nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 40%, rgb(255, 255, 255) 60%);
+}
+
+.nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 30%, rgb(255, 255, 255) 70%);
+}
+
+.nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 20%, rgb(255, 255, 255) 80%);
+}
+
+.nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 10%, rgb(255, 255, 255) 90%);
+}
+
+.nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 0%, rgb(255, 255, 255) 100%);
+}
+
+.nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-accent $ style-settings-plugin */
 .folder-title-accent .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1044,7 +1093,7 @@ img {
    color: color-mix(in srgb, var(--color-accent) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-red */
+/* Modification: folder-title-red $ style-settings-plugin */
 .folder-title-red .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-red) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1093,7 +1142,7 @@ img {
    color: color-mix(in srgb, var(--color-red) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-orange */
+/* Modification: folder-title-orange $ style-settings-plugin */
 .folder-title-orange .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-orange) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1142,7 +1191,7 @@ img {
    color: color-mix(in srgb, var(--color-orange) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-yellow */
+/* Modification: folder-title-yellow $ style-settings-plugin */
 .folder-title-yellow .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-yellow) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1191,7 +1240,7 @@ img {
    color: color-mix(in srgb, var(--color-yellow) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-lime */
+/* Modification: folder-title-lime $ style-settings-plugin */
 .folder-title-lime .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-lime) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1240,7 +1289,7 @@ img {
    color: color-mix(in srgb, var(--color-lime) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-green */
+/* Modification: folder-title-green $ style-settings-plugin */
 .folder-title-green .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-green) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1289,7 +1338,7 @@ img {
    color: color-mix(in srgb, var(--color-green) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-cyan */
+/* Modification: folder-title-cyan $ style-settings-plugin */
 .folder-title-cyan .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-cyan) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1338,7 +1387,7 @@ img {
    color: color-mix(in srgb, var(--color-cyan) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-sky */
+/* Modification: folder-title-sky $ style-settings-plugin */
 .folder-title-sky .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-sky) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1387,7 +1436,7 @@ img {
    color: color-mix(in srgb, var(--color-sky) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-blue */
+/* Modification: folder-title-blue $ style-settings-plugin */
 .folder-title-blue .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-blue) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1436,7 +1485,7 @@ img {
    color: color-mix(in srgb, var(--color-blue) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-indigo */
+/* Modification: folder-title-indigo $ style-settings-plugin */
 .folder-title-indigo .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-indigo) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1485,7 +1534,7 @@ img {
    color: color-mix(in srgb, var(--color-indigo) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-violet */
+/* Modification: folder-title-violet $ style-settings-plugin */
 .folder-title-violet .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-violet) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1534,7 +1583,7 @@ img {
    color: color-mix(in srgb, var(--color-violet) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-pink */
+/* Modification: folder-title-pink $ style-settings-plugin */
 .folder-title-pink .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-pink) 100%, rgb(255, 255, 255) 0%);
 }
@@ -1583,56 +1632,7 @@ img {
    color: color-mix(in srgb, var(--color-pink) 0%, rgb(255, 255, 255) 100%);
 }
 
-/* Modification: folder-title-gray */
-.folder-title-gray .nav-folder:nth-of-type(1) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 100%, rgb(255, 255, 255) 0%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(2) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 90%, rgb(255, 255, 255) 10%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(3) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 80%, rgb(255, 255, 255) 20%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(4) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 70%, rgb(255, 255, 255) 30%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(5) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 60%, rgb(255, 255, 255) 40%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(6) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 50%, rgb(255, 255, 255) 50%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(7) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 40%, rgb(255, 255, 255) 60%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(8) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 30%, rgb(255, 255, 255) 70%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(9) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 20%, rgb(255, 255, 255) 80%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(10) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 10%, rgb(255, 255, 255) 90%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(11) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 0%, rgb(255, 255, 255) 100%);
-}
-
-.folder-title-gray .nav-folder:nth-of-type(n+12) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-gray) 0%, rgb(255, 255, 255) 100%);
-}
-
-/* Modification: folder-title-theme */
+/* Modification: folder-title-theme $ style-settings-plugin */
 .folder-title-theme .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-theme) 100%, rgb(255, 255, 255) 0%);
 }
@@ -3817,9 +3817,6 @@ settings:
       -
          label: Pink
          value: folder-title-pink
-      -
-         label: Gray
-         value: folder-title-gray
       -
          label: Theme
          value: folder-title-theme
