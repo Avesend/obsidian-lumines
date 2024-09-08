@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.2.4
+Lumines Obsidian Version: 2.3.4
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -68,6 +68,8 @@ SOFTWARE.
    --color-pink: rgb(250, 162, 193);
    --color-gray: rgb(206, 212, 218);
    --color-white: rgb(220, 220, 220);
+
+   --color-theme: rgb(138, 92, 245);
 }
 
 /* Modification: desktop-media-query */
@@ -992,53 +994,691 @@ img {
    background-image: none;
 }
 
-/* Modification: folder-name-colors */
-.nav-folder:nth-of-type(1) .nav-folder-title {
+/* Modification: folder-title-color */
+/* Modification: folder-title-accent */
+.folder-title-accent .nav-folder:nth-of-type(1) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 100%, rgb(255, 255, 255) 0%);
 }
 
-.nav-folder:nth-of-type(2) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(2) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 90%, rgb(255, 255, 255) 10%);
 }
 
-.nav-folder:nth-of-type(3) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(3) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 80%, rgb(255, 255, 255) 20%);
 }
 
-.nav-folder:nth-of-type(4) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(4) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 70%, rgb(255, 255, 255) 30%);
 }
 
-.nav-folder:nth-of-type(5) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(5) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 60%, rgb(255, 255, 255) 40%);
 }
 
-.nav-folder:nth-of-type(6) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(6) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 50%, rgb(255, 255, 255) 50%);
 }
 
-.nav-folder:nth-of-type(7) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(7) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 40%, rgb(255, 255, 255) 60%);
 }
 
-.nav-folder:nth-of-type(8) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(8) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 30%, rgb(255, 255, 255) 70%);
 }
 
-.nav-folder:nth-of-type(9) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(9) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 20%, rgb(255, 255, 255) 80%);
 }
 
-.nav-folder:nth-of-type(10) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(10) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 10%, rgb(255, 255, 255) 90%);
 }
 
-.nav-folder:nth-of-type(11) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(11) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 0%, rgb(255, 255, 255) 100%);
 }
 
-.nav-folder:nth-of-type(n+12) .nav-folder-title {
+.folder-title-accent .nav-folder:nth-of-type(n+12) .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-red */
+.folder-title-red .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-red .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-orange */
+.folder-title-orange .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-orange .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-yellow */
+.folder-title-yellow .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-yellow .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-lime */
+.folder-title-lime .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-lime .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-green */
+.folder-title-green .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-green .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-cyan */
+.folder-title-cyan .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-cyan .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-sky */
+.folder-title-sky .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-sky .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-blue */
+.folder-title-blue .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-blue .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-indigo */
+.folder-title-indigo .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-indigo .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-violet */
+.folder-title-violet .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-violet .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-pink */
+.folder-title-pink .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-pink .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-gray */
+.folder-title-gray .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-gray .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Modification: folder-title-theme */
+.folder-title-theme .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 100%, rgb(255, 255, 255) 0%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 90%, rgb(255, 255, 255) 10%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 80%, rgb(255, 255, 255) 20%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 70%, rgb(255, 255, 255) 30%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 60%, rgb(255, 255, 255) 40%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 50%, rgb(255, 255, 255) 50%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 40%, rgb(255, 255, 255) 60%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 30%, rgb(255, 255, 255) 70%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 20%, rgb(255, 255, 255) 80%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 10%, rgb(255, 255, 255) 90%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 0%, rgb(255, 255, 255) 100%);
+}
+
+.folder-title-theme .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-theme) 0%, rgb(255, 255, 255) 100%);
 }
 
 /* Modification: dataview-plugin */
@@ -3123,3 +3763,64 @@ ul.dataview-ul {
       background: transparent;
    }
 }
+
+/* @settings
+name: Lumines Theme
+id: lumines-theme
+settings:
+   -
+      id: folder-title-color
+
+      title: Folder title color
+      title.ru: Цвет названий папок
+
+      description: Select a color for folder titles
+      description.ru: Выберите цвет для названий папок
+
+      type: class-select
+      allowEmpty: false
+      default: folder-title-accent
+      options:
+      -
+         label: Accent
+         value: folder-title-accent
+      -
+         label: Red
+         value: folder-title-red
+      -
+         label: Orange
+         value: folder-title-orange
+      -
+         label: Yellow
+         value: folder-title-yellow
+      -
+         label: Lime
+         value: folder-title-lime
+      -
+         label: Green
+         value: folder-title-green
+      -
+         label: Cyan
+         value: folder-title-cyan
+      -
+         label: Sky
+         value: folder-title-sky
+      -
+         label: Blue
+         value: folder-title-blue
+      -
+         label: Indigo
+         value: folder-title-indigo
+      -
+         label: Violet
+         value: folder-title-violet
+      -
+         label: Pink
+         value: folder-title-pink
+      -
+         label: Gray
+         value: folder-title-gray
+      -
+         label: Theme
+         value: folder-title-theme
+*/
