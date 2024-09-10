@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.4.0
+Lumines Obsidian Version: 2.4.1
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -37,12 +37,12 @@ SOFTWARE.
 
 :root {
 /* Modification: accent-colors */
-   --color-150: rgb(069, 046, 123);
-   --color-140: rgb(083, 055, 147);
-   --color-130: rgb(097, 064, 172);
-   --color-120: rgb(110, 074, 196);
-   --color-110: rgb(124, 083, 221);
-   --color-100: rgb(138, 092, 245);
+   --color-150: rgb(69, 46, 123);
+   --color-140: rgb(83, 55, 147);
+   --color-130: rgb(97, 64, 172);
+   --color-120: rgb(110, 74, 196);
+   --color-110: rgb(124, 83, 221);
+   --color-100: rgb(138, 92, 245);
    --color-090: rgb(150, 108, 246);
    --color-080: rgb(161, 125, 247);
    --color-070: rgb(173, 141, 248);
@@ -76,22 +76,22 @@ SOFTWARE.
 @media (min-width: 768px) {
 /* Modification: theme-dark */
    .theme-dark {
-      --color-base-00: rgb(033, 033, 033);
-      --color-base-10: rgb(036, 036, 036);
-      --color-base-20: rgb(039, 039, 039);
-      --color-base-25: rgb(042, 042, 042);
-      --color-base-30: rgb(048, 048, 048);
-      --color-base-35: rgb(051, 051, 051);
-      --color-base-40: rgb(054, 054, 054);
-      --color-base-50: rgb(090, 090, 090);
+      --color-base-00: rgb(33, 33, 33);
+      --color-base-10: rgb(36, 36, 36);
+      --color-base-20: rgb(39, 39, 39);
+      --color-base-25: rgb(42, 42, 42);
+      --color-base-30: rgb(48, 48, 48);
+      --color-base-35: rgb(51, 51, 51);
+      --color-base-40: rgb(54, 54, 54);
+      --color-base-50: rgb(90, 90, 90);
       --color-base-60: rgb(140, 140, 140);
       --color-base-70: rgb(190, 190, 190);
       --color-base-100: rgb(193, 193, 193);
 
-      --background-secondary: rgb(040, 040, 040);
-      --background-secondary-alt: rgb(048, 048, 048);
-      --background-primary: rgb(033, 033, 033);
-      --background-primary-alt: rgb(040, 040, 040);
+      --background-secondary: rgb(40, 40, 40);
+      --background-secondary-alt: rgb(48, 48, 48);
+      --background-primary: rgb(33, 33, 33);
+      --background-primary-alt: rgb(40, 40, 40);
       --active-bg: var(--nav-item-background-active);
 
       --h1-color: color-mix(in srgb, var(--color-accent) 100%, var(--color-000) 0%);
@@ -112,9 +112,9 @@ SOFTWARE.
       --color-base-35: rgb(229, 229, 229);
       --color-base-40: rgb(225, 225, 225);
       --color-base-50: rgb(140, 140, 140);
-      --color-base-60: rgb(080, 080, 080);
-      --color-base-70: rgb(073, 073, 073);
-      --color-base-100: rgb(070, 070, 070);
+      --color-base-60: rgb(80, 80, 80);
+      --color-base-70: rgb(73, 73, 73);
+      --color-base-100: rgb(70, 70, 70);
 
       --background-secondary: rgb(239, 239, 239);
       --background-secondary-alt: rgb(233, 233, 233);
@@ -135,23 +135,23 @@ SOFTWARE.
 @media (max-width: 768px) {
 /* Modification: theme-dark */
    .theme-dark {
-      --color-base-00: rgb(010, 010, 010);
-      --color-base-10: rgb(013, 013, 013);
-      --color-base-20: rgb(016, 016, 016);
-      --color-base-25: rgb(019, 019, 019);
-      --color-base-30: rgb(022, 022, 022);
-      --color-base-35: rgb(025, 025, 025);
-      --color-base-40: rgb(028, 028, 028);
-      --color-base-45: rgb(061, 061, 061);
-      --color-base-50: rgb(064, 064, 064);
+      --color-base-00: rgb(10, 10, 10);
+      --color-base-10: rgb(13, 13, 13);
+      --color-base-20: rgb(16, 16, 16);
+      --color-base-25: rgb(19, 19, 19);
+      --color-base-30: rgb(22, 22, 22);
+      --color-base-35: rgb(25, 25, 25);
+      --color-base-40: rgb(28, 28, 28);
+      --color-base-45: rgb(61, 61, 61);
+      --color-base-50: rgb(64, 64, 64);
       --color-base-60: rgb(130, 130, 130);
       --color-base-70: rgb(220, 220, 220);
       --color-base-100: rgb(220, 220, 220);
 
-      --background-secondary: rgb(030, 030, 030);
-      --background-secondary-alt: rgb(022, 022, 022);
-      --background-primary: rgb(010, 010, 010);
-      --background-primary-alt: rgb(030, 030, 030);
+      --background-secondary: rgb(30, 30, 30);
+      --background-secondary-alt: rgb(22, 22, 22);
+      --background-primary: rgb(10, 10, 10);
+      --background-primary-alt: rgb(30, 30, 30);
       --active-bg: var(--nav-item-background-active);
 
       --h1-color: color-mix(in srgb, var(--color-accent) 100%, var(--color-000) 0%);
@@ -160,10 +160,12 @@ SOFTWARE.
       --h4-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-000) 60%);
       --h5-color: color-mix(in srgb, var(--color-accent) 20%, var(--color-000) 80%);
       --h6-color: color-mix(in srgb, var(--color-accent) 0%, var(--color-000) 100%);
+   }
 
-      .table-view-th {
-         background-color: var(--color-base-00) !important;
-      }
+   .dataview.table-view-table > thead > tr > th,
+   .dataview.table-view-table > tbody > tr:nth-child(2n),
+   .dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
+      background-color: rgb(10, 10, 10) !important;
    }
 }
 
@@ -196,7 +198,7 @@ body {
 
 /* Modification: done-checkbox */
    --checklist-done-decoration: none;
-   --checklist-done-color: rgb(080, 080, 080);
+   --checklist-done-color: rgb(80, 80, 80);
 
 /* Modification: text-color */
    --bold-color: var(--color-accent);
@@ -211,7 +213,7 @@ img {
 
 /* Modification: header-padding */
 .cm-s-obsidian .cm-line.HyperMD-header {
-   padding-top: 0.5em;
+   padding-top: .7em;
 }
 
 /* Modification: link-animation */
@@ -231,7 +233,7 @@ ul {
 
 /* Modification: properties-bottom */
 .metadata-container {
-   margin-block-end: 0.3rem;
+   margin-block-end: .35rem;
 }
 
 /* Modification: properties-button */
@@ -1360,6 +1362,10 @@ ul {
 }
 
 /* Modification: dataview-plugin */
+.dataview.list-view-ul {
+   margin-bottom: revert;
+}
+
 ul.dataview-ul {
    list-style: none;
    padding-inline-start: 0;
@@ -1371,7 +1377,7 @@ ul.dataview-ul {
    user-select: none;
    color: var(--text-normal);
    background-color: var(--color-base-00);
-   padding: 6px var(--cell-padding-x) 0.5rem;
+   padding: 6px var(--cell-padding-x) .5rem;
    border-bottom: 1px solid var(--color-base-25);
 }
 
@@ -1382,6 +1388,10 @@ ul.dataview-ul {
    outline: var(--color-base-25) solid 1px;
 }
 
+.dataview.table-view-table > thead {
+   padding-left: 1rem;
+}
+
 .dataview.table-view-table {
    margin-block: 0;
    table-layout: fixed;
@@ -1389,22 +1399,24 @@ ul.dataview-ul {
    --cell-padding-y: 10px;
 }
 
-.dataview.table-view-table > thead {
-   padding-left: 1rem;
-}
-
-.dataview.table-view-table > thead > tr > th > .dataview.small-text::before {
-   content: unset;
+.dataview.table-view-table > tbody > tr > td {
+   cursor: default;
+   padding: var(--cell-padding-y) var(--cell-padding-x);
 }
 
 .dataview.table-view-table > tbody > tr,
 .dataview.table-view-table > tbody > tr:hover {
-   background-color: var(--color-base-10) !important;
+   background-color: var(--color-base-10);
 }
 
-.dataview.table-view-table > tbody > tr > td {
-   cursor: default;
-   padding: var(--cell-padding-y) var(--cell-padding-x);
+.dataview.table-view-table > tbody > tr:nth-child(2n),
+.dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
+   background-color: var(--color-base-00);
+}
+
+.dataview.table-view-table > thead > tr > th > .dataview.small-text::before,
+.dataview.table-view-table > thead > tr > th > .dataview.small-text::after {
+   content: unset;
 }
 
 .dataview.table-view-table > tbody > tr:first-child > td {
@@ -1420,28 +1432,15 @@ ul.dataview-ul {
    padding: .5rem 0 .5rem;
 }
 
-.dataview.dataview-error-box {
-   border: none;
+.dataview.dataview-error {
+   color: var(--color-red);
+   background-color: var(--color-base-00);
 }
 
 .dataview.dataview-error-box > .dataview-error-message {
    font-size: small;
    font-weight: bold;
    color: var(--color-base-50);
-}
-
-.dataview.table-view-table > tbody > tr:nth-child(2n),
-.dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
-   background-color: var(--color-base-00) !important;
-}
-
-.dataview.dataview-error {
-   color: var(--color-red);
-   background-color: var(--color-base-00);
-}
-
-.dataview.list-view-ul {
-   margin-bottom: revert;
 }
 
 /* Modification: property-icons */
@@ -2580,6 +2579,6 @@ settings:
          label: Pink
          value: folder-title-pink
       -
-         label: Theme
-         value: folder-title-theme
+         label: Purple
+         value: folder-title-purple
 */
