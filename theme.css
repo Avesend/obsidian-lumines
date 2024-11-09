@@ -2277,28 +2277,6 @@ ul.dataview-ul {
    --blockquote-border-color: var(--color-accent);
 }
 
-/* Modification: default-headers */
-.default-headers :is(h1, h2, h3, h4, h5, h6,
-.HyperMD-header.HyperMD-header-1,
-.HyperMD-header.HyperMD-header-2,
-.HyperMD-header.HyperMD-header-3,
-.HyperMD-header.HyperMD-header-4,
-.HyperMD-header.HyperMD-header-5,
-.HyperMD-header.HyperMD-header-6) {
-   padding-block: 8px;
-   font-weight: 625;
-   font-size: 1.125rem;
-   color: var(--color-accent) !important;
-}
-
-.default-headers .cm-em,
-.default-headers .cm-strong,
-.default-headers :is(h2, h4,
-.HyperMD-header.HyperMD-header-2,
-.HyperMD-header.HyperMD-header-4) {
-   color: var(--syntax-default) !important;
-}
-
 /* Modification: timestamp-(color) */
 .timestamp-red {
    --h6-color: var(--color-red);
