@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.4.1
+Lumines Obsidian Version: 2.4.2
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -70,6 +70,10 @@ SOFTWARE.
    --color-white: rgb(220, 220, 220);
 
    --color-purple: rgb(138, 92, 245);
+
+   --border-radius-s: 4px;
+   --border-radius-m: 8px;
+   --border-radius-l: 16px;
 }
 
 /* Modification: desktop-media-query */
@@ -185,7 +189,7 @@ body {
    --nav-item-background-active: transparent;
 
 /* Modification: callout */
-   --callout-radius: 8px;
+   --callout-radius: var(--border-radius-m);
    --callout-padding: 24px;
    --callout-title-size: 16px;
    --callout-border-width: 1px;
@@ -208,7 +212,7 @@ body {
 /* Modification: img-border-radius */
 img {
    max-width: 100%;
-   border-radius: 8px;
+   border-radius: var(--border-radius-m);
 }
 
 /* Modification: header-padding */
@@ -1384,7 +1388,7 @@ ul.dataview-ul {
 .block-language-dataview.node-insert-event,
 .cm-preview-code-block.cm-embed-block.markdown-rendered,
 .cm-preview-code-block.cm-embed-block.markdown-rendered:hover {
-   border-radius: 8px !important;
+   border-radius: var(--border-radius-m) !important;
    outline: var(--color-base-25) solid 1px;
 }
 
