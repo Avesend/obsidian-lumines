@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.4.4
+Lumines Obsidian Version: 2.4.5
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -1396,6 +1396,20 @@ ul.dataview-ul {
    margin-block-start: 0em !important;
 }
 
+.dataview.table-wrapper {
+   display: block;
+   max-width: 100%;
+   overflow-x: auto;
+}
+
+.dataview.table-view-table {
+   width: 100%;
+   margin-block: 0;
+   table-layout: auto;
+   --cell-padding-x: 1rem;
+   --cell-padding-y: 10px;
+}
+
 .dataview.table-view-table > thead > tr > th {
    cursor: default;
    user-select: none;
@@ -1408,19 +1422,12 @@ ul.dataview-ul {
 .block-language-dataview.node-insert-event,
 .cm-preview-code-block.cm-embed-block.markdown-rendered,
 .cm-preview-code-block.cm-embed-block.markdown-rendered:hover {
-   border-radius: var(--border-radius-m) !important;
    outline: var(--color-base-25) solid 1px;
+   border-radius: var(--border-radius-m) !important;
 }
 
 .dataview.table-view-table > thead {
    padding-left: 1rem;
-}
-
-.dataview.table-view-table {
-   margin-block: 0;
-   table-layout: fixed;
-   --cell-padding-x: 1rem;
-   --cell-padding-y: 10px;
 }
 
 .dataview.table-view-table > tbody > tr > td {
