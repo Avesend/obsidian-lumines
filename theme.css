@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.4.2
+Lumines Obsidian Version: 2.4.3
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -235,6 +235,29 @@ ul {
    transition: all .3s ease-in;
 }
 
+/* Modification: codeblock */
+.HyperMD-codeblock-begin {
+   border-radius: var(--border-radius-m) var(--border-radius-m) 0 0 !important;
+}
+
+.HyperMD-codeblock-end {
+   border-radius: 0 0 var(--border-radius-m) var(--border-radius-m) !important;
+}
+
+/* Modification: inline-fields [key:: value] */
+.inline-field-key {
+   border-radius: var(--border-radius-s) 0 0 var(--border-radius-s);
+}
+
+.inline-field-value {
+   border-radius: 0 var(--border-radius-s) var(--border-radius-s) 0;
+}
+
+/* Modification: inline-fields (key:: value) */
+.inline-field-standalone-value {
+   border-radius: var(--border-radius-s);
+}
+
 /* Modification: properties-bottom */
 .metadata-container {
    margin-block-end: .35rem;
@@ -277,6 +300,10 @@ ul {
 }
 
 /* Modification: callout */
+.cm-embed-block.cm-callout:hover {
+   border-radius: var(--border-radius-m) !important;
+}
+
 .callout-content p,
 .markdown-rendered ul,
 .markdown-rendered ol {
@@ -1439,6 +1466,10 @@ ul.dataview-ul {
 .dataview.dataview-error {
    color: var(--color-red);
    background-color: var(--color-base-00);
+}
+
+.dataview.dataview-error-box {
+   border: none !important;
 }
 
 .dataview.dataview-error-box > .dataview-error-message {
