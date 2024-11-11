@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.4.4
+Lumines Obsidian Version: 2.4.5
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -232,10 +232,16 @@ ul {
 
 /* Modification: codeblock */
 .HyperMD-codeblock-begin {
+   border-top: 1px solid var(--color-base-20);
    border-radius: var(--border-radius-m) var(--border-radius-m) 0 0 !important;
 }
 
+.HyperMD-codeblock.HyperMD-codeblock-bg {
+   border-inline: 1px solid var(--color-base-20);
+}
+
 .HyperMD-codeblock-end {
+   border-bottom: 1px solid var(--color-base-20);
    border-radius: 0 0 var(--border-radius-m) var(--border-radius-m) !important;
 }
 
@@ -290,6 +296,11 @@ ul {
 /* Modification: files-indentation */
 .tree-item-inner {
    margin-left: 2px
+}
+
+/* Modification: sidebar-vertical-lines */
+.workspace-leaf-resize-handle {
+   opacity: 0;
 }
 
 /* Modification: callout */
