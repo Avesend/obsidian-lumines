@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.5.0
+Lumines Obsidian Version: 2.5.1
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -149,9 +149,19 @@ SOFTWARE.
 
 /* Modification: mobile-theme-dark */
 .is-mobile.theme-dark {
-   --color-base-00: hsl(0, 0%, 12.8%);
-   --color-base-10: hsl(0, 0%, 16.8%);
-   --color-base-20: hsl(0, 0%, 18.8%);
+   --color-base-00: hsl(0, 0%, 9.4%);
+   --color-base-05: hsl(0, 0%, 11.4%);
+   --color-base-10: hsl(0, 0%, 13.4%);
+   --color-base-20: hsl(0, 0%, 15.4%);
+   --color-base-25: hsl(0, 0%, 20.4%);
+   --color-base-30: hsl(0, 0%, 25.4%);
+   --color-base-35: hsl(0, 0%, 30.4%);
+   --color-base-40: hsl(0, 0%, 35.4%);
+   --color-base-50: hsl(0, 0%, 40.4%);
+   --color-base-60: hsl(0, 0%, 45.4%);
+   --color-base-70: hsl(0, 0%, 81.4%);
+   --color-base-80: hsl(0, 0%, 85.4%);
+   --color-base-100: hsl(0, 0%, 100%);
 }
 
 body {
@@ -1451,8 +1461,8 @@ ul.dataview-ul {
 }
 
 .dataview.dataview-error {
+   font-size: small;
    font-weight: 600;
-   font-size: medium;
    border-radius: 8px;
    color: var(--color-red);
    background-color: var(--color-base-05);
@@ -1463,8 +1473,8 @@ ul.dataview-ul {
 }
 
 .dataview.dataview-error-box > .dataview-error-message {
-   font-weight: 600;
    font-size: small;
+   font-weight: 600;
    color: var(--color-red);
 }
 
