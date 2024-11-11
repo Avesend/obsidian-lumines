@@ -1404,7 +1404,7 @@ ul.dataview-ul {
    cursor: default;
    user-select: none;
    color: var(--text-normal);
-   background-color: var(--color-base-00);
+   background-color: var(--color-base-00) !important;
    padding: 6px var(--cell-padding-x) .5rem;
    border-bottom: 1px solid var(--color-base-20);
 }
@@ -1439,7 +1439,7 @@ ul.dataview-ul {
 
 .dataview.table-view-table > tbody > tr:nth-child(2n),
 .dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
-   background-color: var(--color-base-00);
+   background-color: var(--color-base-00) !important;
 }
 
 .dataview.table-view-table > thead > tr > th > .dataview.small-text::before,
@@ -1461,8 +1461,8 @@ ul.dataview-ul {
 }
 
 .dataview.dataview-error {
-   font-size: small;
    font-weight: 600;
+   font-size: small;
    border-radius: 8px;
    color: var(--color-red);
    background-color: var(--color-base-05);
@@ -1473,8 +1473,8 @@ ul.dataview-ul {
 }
 
 .dataview.dataview-error-box > .dataview-error-message {
-   font-size: small;
    font-weight: 600;
+   font-size: x-small;
    color: var(--color-red);
 }
 
