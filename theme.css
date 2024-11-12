@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.5.1
+Lumines Obsidian Version: 2.6.0
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -123,8 +123,6 @@ SOFTWARE.
    --prompt-border-color: var(--color-accent);
    --table-header-background: var(--color-base-05);
 
-   --nav-item-background-hover: transparent;
-   --nav-item-background-active: transparent;
    --nav-item-color-hover: var(--color-base-70);
    --nav-item-color-active: var(--color-base-70);
 
@@ -144,7 +142,65 @@ SOFTWARE.
 
 /* Modification: desktop-theme-light */
 .theme-light {
-   
+   --h1-color: color-mix(in srgb, var(--color-accent) 100%, var(--color-100) 0%);
+   --h2-color: color-mix(in srgb, var(--color-accent) 80%, var(--color-110) 20%);
+   --h3-color: color-mix(in srgb, var(--color-accent) 60%, var(--color-120) 40%);
+   --h4-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-130) 60%);
+   --h5-color: color-mix(in srgb, var(--color-accent) 20%, var(--color-140) 80%);
+   --h6-color: color-mix(in srgb, var(--color-accent) 0%, var(--color-150) 100%);
+
+   --color-base-00: hsl(0, 0%, 96.8%);
+   --color-base-05: hsl(0, 0%, 98.8%);
+   --color-base-10: hsl(0, 0%, 94.8%);
+   --color-base-20: hsl(0, 0%, 92.8%);
+   --color-base-25: hsl(0, 0%, 87.8%);
+   --color-base-30: hsl(0, 0%, 82.8%);
+   --color-base-35: hsl(0, 0%, 77.8%);
+   --color-base-40: hsl(0, 0%, 72.8%);
+   --color-base-50: hsl(0, 0%, 67.8%);
+   --color-base-60: hsl(0, 0%, 62.8%);
+   --color-base-70: hsl(0, 0%, 10.8%);
+   --color-base-80: hsl(0, 0%, 06.8%);
+   --color-base-100: hsl(0, 0%, 02.8%);
+
+   --background-primary: var(--color-base-00);
+   --background-secondary: var(--color-base-05);
+
+   --divider-color: var(--color-base-10);
+   --icon-color-active: var(--color-base-80);
+   --titlebar-background: var(--color-base-05);
+   --titlebar-background-focused: var(--color-base-05);
+   --background-modifier-active-hover: var(--color-accent);
+   --tab-text-color-active: var(--color-base-80);
+   --tab-text-color-focused-active: var(--color-base-60);
+   --tab-text-color-focused-active-current: var(--color-base-80);
+
+   --hr-color: var(--color-base-10);
+   --text-normal: var(--color-base-80);
+   --inline-title-color: var(--color-base-70);
+   --link-external-color: var(--color-accent);
+   --collapse-icon-color-collapsed: var(--color-accent);
+
+   --blockquote-background-color: transparent;
+   --blockquote-border-color: var(--color-accent);
+   --prompt-border-color: var(--color-accent);
+   --table-header-background: var(--color-base-05);
+
+   --nav-item-color-hover: var(--color-base-70);
+   --nav-item-color-active: var(--color-base-70);
+
+   --code-normal: var(--color-base-80);
+   --code-comment: var(--color-base-30);
+   --code-operator: var(--color-base-80);
+   --code-background: var(--color-base-05);
+   --code-punctuation: var(--color-base-60);
+   /* --code-tag: ;
+   --code-value: ;
+   --code-string: ;
+   --code-keyword: ;
+   --code-property: ;
+   --code-function: ;
+   --code-important: ; */
 }
 
 /* Modification: mobile-theme-dark */
