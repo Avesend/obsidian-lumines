@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.1
+Lumines Obsidian Version: 2.6.2
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -127,17 +127,17 @@ SOFTWARE.
    --nav-item-color-active: var(--color-base-70);
 
    --code-normal: var(--color-base-80);
-   --code-comment: var(--color-base-30);
+   --code-comment: var(--color-base-35);
    --code-operator: var(--color-base-80);
    --code-background: var(--color-base-05);
    --code-punctuation: var(--color-base-60);
-   /* --code-tag: ;
-   --code-value: ;
-   --code-string: ;
-   --code-keyword: ;
-   --code-property: ;
-   --code-function: ;
-   --code-important: ; */
+   --code-tag: rgb(224, 108, 117);
+   --code-value: rgb(198, 120, 221);
+   --code-string: rgb(229, 192, 123);
+   --code-keyword: rgb(86, 182, 194);
+   --code-property: rgb(86, 182, 194);
+   --code-function: rgb(152, 195, 121);
+   --code-important: rgb(198, 120, 221);
 }
 
 /* Modification: desktop-theme-light */
@@ -190,17 +190,17 @@ SOFTWARE.
    --nav-item-color-active: var(--color-base-70);
 
    --code-normal: var(--color-base-80);
-   --code-comment: var(--color-base-30);
+   --code-comment: var(--color-base-35);
    --code-operator: var(--color-base-80);
    --code-background: var(--color-base-05);
    --code-punctuation: var(--color-base-60);
-   /* --code-tag: ;
-   --code-value: ;
-   --code-string: ;
-   --code-keyword: ;
-   --code-property: ;
-   --code-function: ;
-   --code-important: ; */
+   --code-tag: rgb(224, 108, 117);
+   --code-value: rgb(198, 120, 221);
+   --code-string: rgb(229, 192, 123);
+   --code-keyword: rgb(86, 182, 194);
+   --code-property: rgb(86, 182, 194);
+   --code-function: rgb(152, 195, 121);
+   --code-important: rgb(198, 120, 221);
 }
 
 /* Modification: mobile-theme-dark */
@@ -295,16 +295,16 @@ ul {
 
 /* Modification: codeblock */
 .HyperMD-codeblock-begin {
-   border-top: 1px solid var(--color-base-20);
+   border-top: 1px solid var(--color-base-10);
    border-radius: var(--border-radius-m) var(--border-radius-m) 0 0 !important;
 }
 
 .HyperMD-codeblock.HyperMD-codeblock-bg {
-   border-inline: 1px solid var(--color-base-20);
+   border-inline: 1px solid var(--color-base-10);
 }
 
 .HyperMD-codeblock-end {
-   border-bottom: 1px solid var(--color-base-20);
+   border-bottom: 1px solid var(--color-base-10);
    border-radius: 0 0 var(--border-radius-m) var(--border-radius-m) !important;
 }
 
@@ -1479,13 +1479,13 @@ ul.dataview-ul {
    color: var(--text-normal);
    background-color: var(--color-base-00) !important;
    padding: 6px var(--cell-padding-x) .5rem;
-   border-bottom: 1px solid var(--color-base-20);
+   border-bottom: 1px solid var(--color-base-10);
 }
 
 .block-language-dataview.node-insert-event,
 .cm-preview-code-block.cm-embed-block.markdown-rendered,
 .cm-preview-code-block.cm-embed-block.markdown-rendered:hover {
-   outline: 1px solid var(--color-base-20);
+   outline: 1px solid var(--color-base-10);
    border-radius: var(--border-radius-m) !important;
 }
 
