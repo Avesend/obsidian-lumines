@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.4
+Lumines Obsidian Version: 2.6.5
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -1393,63 +1393,6 @@ ul.dataview-ul {
 
 .quote-white {
    --blockquote-border-color: var(--color-white);
-}
-
-/* Element: timestamp-(color) */
-.timestamp-accent {
-   --h6-color: var(--color-accent);
-}
-
-.timestamp-red {
-   --h6-color: var(--color-red);
-}
-
-.timestamp-orange {
-   --h6-color: var(--color-orange);
-}
-
-.timestamp-yellow {
-   --h6-color: var(--color-yellow);
-}
-
-.timestamp-lime {
-   --h6-color: var(--color-lime);
-}
-
-.timestamp-green {
-   --h6-color: var(--color-green);
-}
-
-.timestamp-cyan {
-   --h6-color: var(--color-cyan);
-}
-
-.timestamp-skye {
-   --h6-color: var(--color-skye);
-}
-
-.timestamp-blue {
-   --h6-color: var(--color-blue);
-}
-
-.timestamp-indigo {
-   --h6-color: var(--color-indigo);
-}
-
-.timestamp-violet {
-   --h6-color: var(--color-violet);
-}
-
-.timestamp-pink {
-   --h6-color: var(--color-pink);
-}
-
-.timestamp-gray {
-   --h6-color: var(--color-gray);
-}
-
-.timestamp-white {
-   --h6-color: var(--color-white);
 }
 
 /* Element: desktop */
