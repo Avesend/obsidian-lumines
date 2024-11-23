@@ -1,3 +1,5 @@
+<div align="center"><img src="assets/avesend-favicon.png" alt=""/></div>
+
 <div align="center"><h1>Obsidian Lumines</h1><p><a href="https://github.com/Avesend/obsidian-lumines">Star Us on GitHub</a><span> ⭐️ </span><a href="https://github.com/Avesend/obsidian-lumines/issues">Request Feature</a></p></div>
 
 ![](assets/readme-lumines.png)
