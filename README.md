@@ -26,14 +26,18 @@
          <li>time</li>
          <li>cssclasses</li>
          <li>birthday</li>
+         <li>aliases</li>
          <li>save</li>
          <li>lovely</li>
          <li>camera</li>
          <li>radio</li>
          <li>music</li>
-         <li>wallet</li>
+         <li>music</li>
+         <li>subject</li>
+         <li>related</li>
          <li>note</li>
          <li>number</li>
+         <li>purpose</li>
          <li>city</li>
          <li>address</li>
          <li>passport</li>
@@ -57,8 +61,9 @@
          <li>book</li>
          <li>location</li>
          <li>map</li>
+         <li>status</li>
+         <li>bookid</li>
          <li>bag</li>
-         <li>receipt</li>
          <li>box</li>
          <li>reserve</li>
          <li>key</li>
