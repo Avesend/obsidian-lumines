@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.8
+Lumines Obsidian Version: 2.6.9
 Support Obsidian Version: 1.0.0
 
 --------------------------------------------------------------------------------
@@ -354,6 +354,11 @@ img {
 .workspace-drawer-header-name-chevron,
 .metadata-add-button .text-button-icon,
 .clickable-icon.nav-action-button:nth-child(4) {
+   display: none;
+}
+
+/* Element: properties-date */
+.metadata-property-value .clickable-icon[aria-label="Open daily note"] {
    display: none;
 }
 
@@ -868,6 +873,10 @@ ul.dataview-ul {
    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.16989%2015.3L8.69989%2019.83C10.5599%2021.69%2013.5799%2021.69%2015.4499%2019.83L19.8399%2015.44C21.6999%2013.58%2021.6999%2010.56%2019.8399%208.69005L15.2999%204.17005C14.3499%203.22005%2013.0399%202.71005%2011.6999%202.78005L6.69989%203.02005C4.69989%203.11005%203.10989%204.70005%203.00989%206.69005L2.76989%2011.69C2.70989%2013.04%203.21989%2014.35%204.16989%2015.3Z%22%20stroke%3D%22%23D8D8D8%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M9.5%2012C10.8807%2012%2012%2010.8807%2012%209.5C12%208.11929%2010.8807%207%209.5%207C8.11929%207%207%208.11929%207%209.5C7%2010.8807%208.11929%2012%209.5%2012Z%22%20stroke%3D%22%23D8D8D8%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E');
 }
 
+.metadata-property[data-property-key="aliases"] .metadata-property-icon::before {
+   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.02 19.5H7.5C6.88 19.5 6.33 19.48 5.84 19.41C3.21 19.12 2.5 17.88 2.5 14.5V9.5C2.5 6.12 3.21 4.88 5.84 4.59C6.33 4.52 6.88 4.5 7.5 4.5H10.96" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.02 4.5H16.5C17.12 4.5 17.67 4.52 18.16 4.59C20.79 4.88 21.5 6.12 21.5 9.5V14.5C21.5 17.88 20.79 19.12 18.16 19.41C17.67 19.48 17.12 19.5 16.5 19.5H15.02" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 2V22" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 9L10 12L7.5 15" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
 .metadata-property[data-property-key="time"] .metadata-property-icon::before {
    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
@@ -916,8 +925,20 @@ ul.dataview-ul {
    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 4L17 4C21 4 22 5 22 9V15C22 19 21 20 17 20H7C3 20 2 19 2 15L2 9C2 5 3 4 7 4Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 9.69995L13.87 12.2C12.84 13.02 11.15 13.02 10.12 12.2L7 9.69995" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
+.metadata-property[data-property-key="purpose"] .metadata-property-icon::before {
+   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.73 19.7C7.55 18.82 8.8 18.89 9.52 19.85L10.53 21.2C11.34 22.27 12.65 22.27 13.46 21.2L14.47 19.85C15.19 18.89 16.44 18.82 17.26 19.7C19.04 21.6 20.49 20.97 20.49 18.31V7.04C20.5 3.01 19.56 2 15.78 2H8.22C4.44 2 3.5 3.01 3.5 7.04V18.3C3.5 20.97 4.96 21.59 6.73 19.7Z" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 7H16" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11H15" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
 .metadata-property[data-property-key="source"] .metadata-property-icon::before {
    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5 11.3V7.04001C20.5 3.01001 19.56 2 15.78 2H8.22C4.44 2 3.5 3.01001 3.5 7.04001V18.3C3.5 20.96 4.96001 21.59 6.73001 19.69L6.73999 19.68C7.55999 18.81 8.80999 18.88 9.51999 19.83L10.53 21.18" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.2 21.4C19.9673 21.4 21.4 19.9673 21.4 18.2C21.4 16.4327 19.9673 15 18.2 15C16.4327 15 15 16.4327 15 18.2C15 19.9673 16.4327 21.4 18.2 21.4Z" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 22L21 21" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 7H16" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11H15" stroke="%23D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.metadata-property[data-property-key="status"] .metadata-property-icon::before {
+   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z" stroke="%23D8D8D8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.39997C18.8198 5.79997 15.5298 3.71997 11.9998 3.71997C8.46984 3.71997 5.17984 5.79997 2.88984 9.39997C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="%23D8D8D8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.metadata-property[data-property-key="bookid"] .metadata-property-icon::before {
+   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3201 19.0698C14.3201 19.6798 13.92 20.4798 13.41 20.7898L12.0001 21.6998C10.6901 22.5098 8.87006 21.5998 8.87006 19.9798V14.6298C8.87006 13.9198 8.47006 13.0098 8.06006 12.5098L4.22003 8.46976C3.71003 7.95976 3.31006 7.05977 3.31006 6.44977V4.12976C3.31006 2.91976 4.22008 2.00977 5.33008 2.00977H18.67C19.78 2.00977 20.6901 2.91975 20.6901 4.02975V6.24976C20.6901 7.05976 20.1801 8.06976 19.6801 8.56976" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0701 16.5201C17.8374 16.5201 19.2701 15.0874 19.2701 13.3201C19.2701 11.5528 17.8374 10.1201 16.0701 10.1201C14.3028 10.1201 12.8701 11.5528 12.8701 13.3201C12.8701 15.0874 14.3028 16.5201 16.0701 16.5201Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.8701 17.1201L18.8701 16.1201" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
 .metadata-property[data-property-key="cover"] .metadata-property-icon::before {
@@ -942,6 +963,14 @@ ul.dataview-ul {
 
 .metadata-property[data-property-key="save"] .metadata-property-icon::before {
    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.9099 11.12C20.9099 16.01 17.3599 20.59 12.5099 21.93C12.1799 22.02 11.8198 22.02 11.4898 21.93C6.63984 20.59 3.08984 16.01 3.08984 11.12V6.73003C3.08984 5.91003 3.70986 4.98004 4.47986 4.67004L10.0498 2.39007C11.2998 1.88007 12.7098 1.88007 13.9598 2.39007L19.5298 4.67004C20.2898 4.98004 20.9199 5.91003 20.9199 6.73003L20.9099 11.12Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12.5C13.1046 12.5 14 11.6046 14 10.5C14 9.39543 13.1046 8.5 12 8.5C10.8954 8.5 10 9.39543 10 10.5C10 11.6046 10.8954 12.5 12 12.5Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12.5V15.5" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.metadata-property[data-property-key="subject"] .metadata-property-icon::before {
+   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.05 2.53004L4.03002 6.46004C2.10002 7.72004 2.10002 10.54 4.03002 11.8L10.05 15.73C11.13 16.44 12.91 16.44 13.99 15.73L19.98 11.8C21.9 10.54 21.9 7.73004 19.98 6.47004L13.99 2.54004C12.91 1.82004 11.13 1.82004 10.05 2.53004Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.63012 13.0801L5.62012 17.7701C5.62012 19.0401 6.60012 20.4001 7.80012 20.8001L10.9901 21.8601C11.5401 22.0401 12.4501 22.0401 13.0101 21.8601L16.2001 20.8001C17.4001 20.4001 18.3801 19.0401 18.3801 17.7701V13.1301" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.3999 15V9" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.metadata-property[data-property-key="related"] .metadata-property-icon::before {
+   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.16992 7.43994L11.9999 12.5499L20.7699 7.46991" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 21.61V12.54" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.6101 12.83V9.17C21.6101 7.79 20.6201 6.11002 19.4101 5.44002L14.0701 2.48C12.9301 1.84 11.0701 1.84 9.93011 2.48L4.59012 5.44002C3.38012 6.11002 2.39014 7.79 2.39014 9.17V14.83C2.39014 16.21 3.38012 17.89 4.59012 18.56L9.93011 21.52C10.5001 21.84 11.2501 22 12.0001 22C12.7501 22 13.5001 21.84 14.0701 21.52" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.2 21.4C20.9673 21.4 22.4 19.9673 22.4 18.2C22.4 16.4327 20.9673 15 19.2 15C17.4327 15 16 16.4327 16 18.2C16 19.9673 17.4327 21.4 19.2 21.4Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 22L22 21" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
 .metadata-property[data-property-key="lovely"] .metadata-property-icon::before {
@@ -1010,10 +1039,6 @@ ul.dataview-ul {
 
 .metadata-property[data-property-key="box"] .metadata-property-icon::before {
    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.17017 7.43994L12.0002 12.5499L20.7701 7.46991" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.0002 21.61V12.54" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.93011 2.48L4.59012 5.45003C3.38012 6.12003 2.39014 7.80001 2.39014 9.18001V14.83C2.39014 16.21 3.38012 17.89 4.59012 18.56L9.93011 21.53C11.0701 22.16 12.9401 22.16 14.0801 21.53L19.4201 18.56C20.6301 17.89 21.6201 16.21 21.6201 14.83V9.18001C21.6201 7.80001 20.6301 6.12003 19.4201 5.45003L14.0801 2.48C12.9301 1.84 11.0701 1.84 9.93011 2.48Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 13.2401V9.58014L7.51001 4.1001" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-}
-
-.metadata-property[data-property-key="receipt"] .metadata-property-icon::before {
-   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.73 19.7C7.55 18.82 8.8 18.89 9.52 19.85L10.53 21.2C11.34 22.27 12.65 22.27 13.46 21.2L14.47 19.85C15.19 18.89 16.44 18.82 17.26 19.7C19.04 21.6 20.49 20.97 20.49 18.31V7.04C20.5 3.01 19.56 2 15.78 2H8.22C4.44 2 3.5 3.01 3.5 7.04V18.3C3.5 20.97 4.96 21.59 6.73 19.7Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 7H16" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11H15" stroke="%23D8D8D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
 .metadata-property[data-property-key="reserve"] .metadata-property-icon::before {
