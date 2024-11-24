@@ -22,47 +22,46 @@
    <summary>Available icons</summary>
    <p>
       <ul>
-         <li>tags</li>
-         <li>time</li>
-         <li>cssclasses</li>
-         <li>birthday</li>
          <li>aliases</li>
-         <li>save</li>
-         <li>lovely</li>
-         <li>camera</li>
-         <li>radio</li>
-         <li>music</li>
-         <li>music</li>
-         <li>subject</li>
-         <li>related</li>
-         <li>note</li>
+         <li>tags</li>
+         <li>cssclasses</li>
+         <li>time</li>
+         <li>birthday</li>
          <li>number</li>
-         <li>purpose</li>
          <li>city</li>
          <li>address</li>
          <li>passport</li>
          <li>issued</li>
-         <li>game</li>
-         <li>weight</li>
-         <li>ticket</li>
          <li>bankcard</li>
          <li>snils</li>
          <li>socials</li>
          <li>email</li>
+         <li>purpose</li>
          <li>source</li>
+         <li>bookid</li>
          <li>cover</li>
          <li>author</li>
          <li>rating</li>
          <li>year</li>
          <li>link</li>
+         <li>subject</li>
+         <li>related</li>
+         <li>save</li>
+         <li>lovely</li>
+         <li>camera</li>
+         <li>radio</li>
+         <li>music</li>
+         <li>wallet</li>
+         <li>note</li>
+         <li>game</li>
+         <li>weight</li>
+         <li>ticket</li>
          <li>timer</li>
          <li>briefcase</li>
          <li>award</li>
          <li>book</li>
          <li>location</li>
          <li>map</li>
-         <li>status</li>
-         <li>bookid</li>
          <li>bag</li>
          <li>box</li>
          <li>reserve</li>
