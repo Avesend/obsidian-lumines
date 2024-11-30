@@ -37,7 +37,7 @@
          <li>socials</li>
          <li>email</li>
          <li>purpose</li>
-         <li>source</li>
+         <li>sources</li>
          <li>bookid</li>
          <li>cover</li>
          <li>author</li>
