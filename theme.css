@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.11
+Lumines Obsidian Version: 2.6.12
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -306,9 +306,30 @@ img {
    background-image: none;
 }
 
+/* Element: header-title */
+.view-header-title {
+   margin: 0 auto;
+   max-width: 80%;
+   text-align: center;
+}
+
+.view-content .inline-title {
+   max-width: 100%;
+   overflow: hidden;
+   font-size: 1.35em;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
 /* Element: header-padding */
 .cm-s-obsidian .cm-line.HyperMD-header {
    padding-top: .7em;
+}
+
+/* Element: breadcrumb */
+.view-header-breadcrumb,
+.view-header-breadcrumb-separator {
+   display: none;
 }
 
 /* Element: codeblock */
@@ -346,6 +367,15 @@ img {
 /* Element: properties */
 .metadata-container {
    margin-block-end: .35rem;
+}
+
+.metadata-property-key,
+.metadata-property-value {
+   border: none;
+}
+
+.metadata-properties-heading {
+   display: none;
 }
 
 /* Element: vault-name-chevron */
@@ -842,6 +872,11 @@ ul.dataview-ul {
    background-repeat: no-repeat;
    background-position: center;
    margin-left: var(--size-4-1);
+}
+
+/* Element: property-tags */
+[data-property-key="tags"] .multi-select-pill-remove-button {
+   opacity: 0.65;
 }
 
 /* Element: properties-icons */
