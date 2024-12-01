@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.12
+Lumines Obsidian Version: 2.6.13
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -89,18 +89,18 @@ SOFTWARE.
    --h5-color: color-mix(in srgb, var(--color-accent) 20%, var(--accent-000) 80%);
    --h6-color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
 
-   --color-base-00: hsl(0, 0%, 11.8%);
-   --color-base-05: hsl(0, 0%, 13.8%);
-   --color-base-10: hsl(0, 0%, 15.8%);
-   --color-base-20: hsl(0, 0%, 17.8%);
-   --color-base-25: hsl(0, 0%, 22.8%);
-   --color-base-30: hsl(0, 0%, 27.8%);
-   --color-base-35: hsl(0, 0%, 32.8%);
-   --color-base-40: hsl(0, 0%, 37.8%);
-   --color-base-50: hsl(0, 0%, 42.8%);
-   --color-base-60: hsl(0, 0%, 47.8%);
-   --color-base-70: hsl(0, 0%, 84.8%);
-   --color-base-80: hsl(0, 0%, 88.8%);
+   --color-base-00: hsl(0, 0%, 11.7%);
+   --color-base-05: hsl(0, 0%, 13.7%);
+   --color-base-10: hsl(0, 0%, 15.7%);
+   --color-base-20: hsl(0, 0%, 17.7%);
+   --color-base-25: hsl(0, 0%, 22.7%);
+   --color-base-30: hsl(0, 0%, 27.7%);
+   --color-base-35: hsl(0, 0%, 32.7%);
+   --color-base-40: hsl(0, 0%, 37.7%);
+   --color-base-50: hsl(0, 0%, 42.7%);
+   --color-base-60: hsl(0, 0%, 47.7%);
+   --color-base-70: hsl(0, 0%, 88.7%);
+   --color-base-80: hsl(0, 0%, 92.7%);
    --color-base-100: hsl(0, 0%, 100%);
 
    --background-primary: var(--color-base-00);
@@ -128,6 +128,7 @@ SOFTWARE.
 
    --nav-item-background-hover: transparent;
    --nav-item-background-active: transparent;
+   --nav-item-color: var(--color-base-70);
    --nav-item-color-hover: var(--color-base-70);
    --nav-item-color-active: var(--color-base-70);
 
@@ -147,19 +148,67 @@ SOFTWARE.
 
 /* Element: mobile-dark-theme */
 .is-mobile.theme-dark {
-   --color-base-00: hsl(0, 0%, 11.8%);
-   --color-base-05: hsl(0, 0%, 13.8%);
-   --color-base-10: hsl(0, 0%, 15.8%);
-   --color-base-20: hsl(0, 0%, 17.8%);
-   --color-base-25: hsl(0, 0%, 22.8%);
-   --color-base-30: hsl(0, 0%, 27.8%);
-   --color-base-35: hsl(0, 0%, 32.8%);
-   --color-base-40: hsl(0, 0%, 37.8%);
-   --color-base-50: hsl(0, 0%, 42.8%);
-   --color-base-60: hsl(0, 0%, 47.8%);
-   --color-base-70: hsl(0, 0%, 84.8%);
-   --color-base-80: hsl(0, 0%, 88.8%);
+   --color-base-00: hsl(0, 0%, 10%);
+   --color-base-05: hsl(0, 0%, 12%);
+   --color-base-10: hsl(0, 0%, 14%);
+   --color-base-20: hsl(0, 0%, 16%);
+   --color-base-25: hsl(0, 0%, 21%);
+   --color-base-30: hsl(0, 0%, 26%);
+   --color-base-35: hsl(0, 0%, 31%);
+   --color-base-40: hsl(0, 0%, 36%);
+   --color-base-50: hsl(0, 0%, 41%);
+   --color-base-60: hsl(0, 0%, 46%);
+   --color-base-70: hsl(0, 0%, 88%);
+   --color-base-80: hsl(0, 0%, 92%);
    --color-base-100: hsl(0, 0%, 100%);
+}
+
+.theme-dark .nav-folder:nth-of-type(1) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 100%, var(--accent-000) 0%);
+}
+
+.theme-dark .nav-folder:nth-of-type(2) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 90%, var(--accent-000) 10%);
+}
+
+.theme-dark .nav-folder:nth-of-type(3) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 80%, var(--accent-000) 20%);
+}
+
+.theme-dark .nav-folder:nth-of-type(4) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
+}
+
+.theme-dark .nav-folder:nth-of-type(5) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 60%, var(--accent-000) 40%);
+}
+
+.theme-dark .nav-folder:nth-of-type(6) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 50%, var(--accent-000) 50%);
+}
+
+.theme-dark .nav-folder:nth-of-type(7) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 40%, var(--accent-000) 60%);
+}
+
+.theme-dark .nav-folder:nth-of-type(8) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 30%, var(--accent-000) 70%);
+}
+
+.theme-dark .nav-folder:nth-of-type(9) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 20%, var(--accent-000) 80%);
+}
+
+.theme-dark .nav-folder:nth-of-type(10) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 10%, var(--accent-000) 90%);
+}
+
+.theme-dark .nav-folder:nth-of-type(11) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
+}
+
+.theme-dark .nav-folder:nth-of-type(n+12) .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
 }
 
 /* Element: desktop-light-theme */
@@ -210,6 +259,7 @@ SOFTWARE.
 
    --nav-item-background-hover: transparent;
    --nav-item-background-active: transparent;
+   --nav-item-color: var(--color-base-70);
    --nav-item-color-hover: var(--color-base-70);
    --nav-item-color-active: var(--color-base-70);
 
@@ -1082,55 +1132,6 @@ ul.dataview-ul {
 
 .metadata-property[data-property-key="youtube"] .metadata-property-icon::before {
    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.4001 9.50006L13.9001 11.0001C14.8001 11.6001 14.8001 12.5001 13.9001 13.1001L11.4001 14.6001C10.4001 15.2001 9.6001 14.7001 9.6001 13.6001V10.6001C9.6001 9.30006 10.4001 8.90006 11.4001 9.50006Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-}
-
-/* Element: folder-titles */
-.nav-folder:nth-of-type(1) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 100%, var(--accent-000) 0%);
-}
-
-.nav-folder:nth-of-type(2) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 90%, var(--accent-000) 10%);
-}
-
-.nav-folder:nth-of-type(3) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 80%, var(--accent-000) 20%);
-}
-
-.nav-folder:nth-of-type(4) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
-}
-
-.nav-folder:nth-of-type(5) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 60%, var(--accent-000) 40%);
-}
-
-.nav-folder:nth-of-type(6) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 50%, var(--accent-000) 50%);
-}
-
-.nav-folder:nth-of-type(7) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 40%, var(--accent-000) 60%);
-}
-
-.nav-folder:nth-of-type(8) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 30%, var(--accent-000) 70%);
-}
-
-.nav-folder:nth-of-type(9) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 20%, var(--accent-000) 80%);
-}
-
-.nav-folder:nth-of-type(10) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 10%, var(--accent-000) 90%);
-}
-
-.nav-folder:nth-of-type(11) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
-}
-
-.nav-folder:nth-of-type(n+12) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
 }
 
 /* Element: cssclasses */
