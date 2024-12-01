@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.13
+Lumines Obsidian Version: 2.6.14
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -292,6 +292,10 @@ SOFTWARE.
    --color-base-70: hsl(0, 0%, 10.8%);
    --color-base-80: hsl(0, 0%, 06.8%);
    --color-base-100: hsl(0, 0%, 02.8%);
+}
+
+.theme-light .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 100%, var(--accent-000) 0%);
 }
 
 body {
@@ -1472,7 +1476,7 @@ ul.dataview-ul {
       height: 6px;
       opacity: 0.1;
       border-radius: 50%;
-      background-color: rgb(179, 179, 179);
+      background-color: var(--color-base-70);
       transform: translateY(-50%);
       transition: opacity .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
    }
@@ -1532,7 +1536,7 @@ ul.dataview-ul {
       height: 6px;
       opacity: 0.1;
       border-radius: 50%;
-      background-color: rgb(179, 179, 179);
+      background-color: var(--color-base-70);
       transform: translateY(-50%);
       transition: opacity .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
    }
