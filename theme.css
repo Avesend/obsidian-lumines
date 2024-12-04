@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.16
+Lumines Obsidian Version: 2.6.17
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -327,6 +327,12 @@ body {
    /* Element: markdown */
    --bold-color: var(--color-accent);
    --italic-color: var(--color-accent);
+
+   /* Element: scrollbar */
+   --scrollbar-thumb-bg: none;
+
+   /* Element: directory */
+   --nav-indentation-guide-color: rgba(var(--mono-rgb-100), 0.08);
 }
 
 /* Element: ul */
@@ -449,6 +455,10 @@ img {
 /* Element: files-indentation */
 .tree-item-inner {
    margin-left: 2px
+}
+
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+   box-shadow: none;
 }
 
 /* Element: callout */
