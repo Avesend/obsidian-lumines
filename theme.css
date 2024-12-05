@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.7.1
+Lumines Obsidian Version: 2.7.2
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -270,6 +270,14 @@ body {
 
    /* Title: scrollbar */
    --scrollbar-thumb-bg: none;
+
+   /* Title: modals */
+   --modal-radius: var(--border-radius-m);
+
+   /* Title: tabs */
+   --tab-curve: var(--border-radius-m);
+   --tab-radius: var(--border-radius-m);
+   --tab-radius-active: var(--border-radius-m) var(--border-radius-m) 0 0;
 }
 
 /* Title: ul-type */
