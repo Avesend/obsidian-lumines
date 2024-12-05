@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.6.17
+Lumines Obsidian Version: 2.6.18
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -36,59 +36,32 @@ SOFTWARE.
 */
 
 :root {
-   /* Element: accent-colors */
-   --accent-200: rgb(0, 0, 0);
-   --accent-190: rgb(14, 9, 24);
-   --accent-180: rgb(28, 18, 49);
-   --accent-170: rgb(41, 28, 73);
-   --accent-160: rgb(55, 37, 98);
-   --accent-150: rgb(69, 46, 123);
-   --accent-140: rgb(83, 55, 147);
-   --accent-130: rgb(97, 64, 172);
-   --accent-120: rgb(110, 74, 196);
-   --accent-110: rgb(124, 83, 221);
-   --accent-100: rgb(138, 92, 245);
-   --accent-090: rgb(150, 108, 246);
-   --accent-080: rgb(161, 125, 247);
-   --accent-070: rgb(173, 141, 248);
-   --accent-060: rgb(185, 157, 249);
-   --accent-050: rgb(197, 174, 250);
-   --accent-040: rgb(208, 190, 251);
-   --accent-030: rgb(220, 206, 252);
-   --accent-020: rgb(232, 222, 253);
-   --accent-010: rgb(243, 239, 254);
-   --accent-000: rgb(255, 255, 255);
+   /* Title: accent-colors */
+   --color-accent-100: hsl(258, 88%, 66%);
 
-   /* Element: design-colors */
-   --color-red: rgb(248, 113, 113);
-   --color-orange: rgb(254, 163, 98);
-   --color-yellow: rgb(255, 224, 102);
-   --color-lime: rgb(190, 242, 100);
-   --color-green: rgb(105, 219, 124);
-   --color-cyan: rgb(102, 217, 232);
-   --color-sky: rgb(77, 171, 247);
-   --color-blue: rgb(59, 130, 246);
-   --color-indigo: rgb(129, 140, 248);
-   --color-violet: rgb(159, 143, 239);
-   --color-pink: rgb(250, 162, 193);
-   --color-gray: rgb(206, 212, 218);
-   --color-white: rgb(220, 220, 220);
+   /* Title: design-colors */
+   --color-red: hsl(0, 91%, 71%);
+   --color-orange: hsl(25, 99%, 69%);
+   --color-yellow: hsl(48, 100%, 70%);
+   --color-lime: hsl(82, 85%, 67%);
+   --color-green: hsl(130, 61%, 64%);
+   --color-cyan: hsl(187, 74%, 65%);
+   --color-sky: hsl(207, 91%, 64%);
+   --color-blue: hsl(217, 91%, 60%);
+   --color-indigo: hsl(234, 89%, 74%);
+   --color-violet: hsl(250, 75%, 75%);
+   --color-pink: hsl(339, 90%, 81%);
+   --color-gray: hsl(210, 14%, 83%);
+   --color-white: hsl(0, 0%, 86%);
 
-   /* Element: border-radius */
+   /* Title: border-radius */
    --border-radius-s: 4px;
    --border-radius-m: 8px;
    --border-radius-l: 16px;
 }
 
-/* Element: desktop-dark-theme */
+/* Title: dark-theme-desktop */
 .theme-dark {
-   --h1-color: color-mix(in srgb, var(--color-accent) 100%, var(--accent-000) 0%);
-   --h2-color: color-mix(in srgb, var(--color-accent) 80%, var(--accent-000) 20%);
-   --h3-color: color-mix(in srgb, var(--color-accent) 60%, var(--accent-000) 40%);
-   --h4-color: color-mix(in srgb, var(--color-accent) 40%, var(--accent-000) 60%);
-   --h5-color: color-mix(in srgb, var(--color-accent) 20%, var(--accent-000) 80%);
-   --h6-color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
-
    --color-base-00: hsl(0, 0%, 11.7%);
    --color-base-05: hsl(0, 0%, 13.7%);
    --color-base-10: hsl(0, 0%, 15.7%);
@@ -108,12 +81,14 @@ SOFTWARE.
 
    --divider-color: var(--color-base-10);
    --icon-color-active: var(--color-base-80);
+   --interactive-normal: var(--color-base-25);
+   --modal-border-color: var(--color-base-10);
    --titlebar-background: var(--color-base-05);
    --titlebar-background-focused: var(--color-base-05);
-   --background-modifier-active-hover: var(--color-accent);
    --tab-text-color-active: var(--color-base-80);
    --tab-text-color-focused-active: var(--color-base-60);
    --tab-text-color-focused-active-current: var(--color-base-80);
+   --background-modifier-active-hover: var(--color-accent);
 
    --hr-color: var(--color-base-10);
    --text-normal: var(--color-base-80);
@@ -126,8 +101,6 @@ SOFTWARE.
    --prompt-border-color: var(--color-accent);
    --table-header-background: var(--color-base-05);
 
-   --nav-item-background-hover: transparent;
-   --nav-item-background-active: transparent;
    --nav-item-color: var(--color-base-70);
    --nav-item-color-hover: var(--color-base-70);
    --nav-item-color-active: var(--color-base-70);
@@ -146,7 +119,7 @@ SOFTWARE.
    --code-important: rgb(198, 120, 221);
 }
 
-/* Element: mobile-dark-theme */
+/* Title: dark-theme-mobile */
 .is-mobile.theme-dark {
    --color-base-00: hsl(0, 0%, 11%);
    --color-base-05: hsl(0, 0%, 13%);
@@ -163,63 +136,8 @@ SOFTWARE.
    --color-base-100: hsl(0, 0%, 100%);
 }
 
-.theme-dark .nav-folder:nth-of-type(1) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 100%, var(--accent-000) 0%);
-}
-
-.theme-dark .nav-folder:nth-of-type(2) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 90%, var(--accent-000) 10%);
-}
-
-.theme-dark .nav-folder:nth-of-type(3) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 80%, var(--accent-000) 20%);
-}
-
-.theme-dark .nav-folder:nth-of-type(4) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
-}
-
-.theme-dark .nav-folder:nth-of-type(5) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 60%, var(--accent-000) 40%);
-}
-
-.theme-dark .nav-folder:nth-of-type(6) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 50%, var(--accent-000) 50%);
-}
-
-.theme-dark .nav-folder:nth-of-type(7) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 40%, var(--accent-000) 60%);
-}
-
-.theme-dark .nav-folder:nth-of-type(8) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 30%, var(--accent-000) 70%);
-}
-
-.theme-dark .nav-folder:nth-of-type(9) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 20%, var(--accent-000) 80%);
-}
-
-.theme-dark .nav-folder:nth-of-type(10) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 10%, var(--accent-000) 90%);
-}
-
-.theme-dark .nav-folder:nth-of-type(11) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
-}
-
-.theme-dark .nav-folder:nth-of-type(n+12) .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-000) 100%);
-}
-
-/* Element: desktop-light-theme */
+/* Title: light-theme-desktop */
 .theme-light {
-   --h1-color: color-mix(in srgb, var(--color-accent) 100%, var(--accent-100) 0%);
-   --h2-color: color-mix(in srgb, var(--color-accent) 80%, var(--accent-110) 20%);
-   --h3-color: color-mix(in srgb, var(--color-accent) 60%, var(--accent-120) 40%);
-   --h4-color: color-mix(in srgb, var(--color-accent) 40%, var(--accent-130) 60%);
-   --h5-color: color-mix(in srgb, var(--color-accent) 20%, var(--accent-140) 80%);
-   --h6-color: color-mix(in srgb, var(--color-accent) 0%, var(--accent-150) 100%);
-
    --color-base-00: hsl(0, 0%, 96.8%);
    --color-base-05: hsl(0, 0%, 98.8%);
    --color-base-10: hsl(0, 0%, 94.8%);
@@ -232,19 +150,21 @@ SOFTWARE.
    --color-base-60: hsl(0, 0%, 62.8%);
    --color-base-70: hsl(0, 0%, 10.8%);
    --color-base-80: hsl(0, 0%, 06.8%);
-   --color-base-100: hsl(0, 0%, 02.8%);
+   --color-base-100: hsl(0, 0%, 2.8%);
 
    --background-primary: var(--color-base-00);
    --background-secondary: var(--color-base-05);
 
    --divider-color: var(--color-base-10);
    --icon-color-active: var(--color-base-80);
+   --interactive-normal: var(--color-base-25);
+   --modal-border-color: var(--color-base-10);
    --titlebar-background: var(--color-base-05);
    --titlebar-background-focused: var(--color-base-05);
-   --background-modifier-active-hover: var(--color-accent);
    --tab-text-color-active: var(--color-base-80);
    --tab-text-color-focused-active: var(--color-base-60);
    --tab-text-color-focused-active-current: var(--color-base-80);
+   --background-modifier-active-hover: var(--color-accent);
 
    --hr-color: var(--color-base-10);
    --text-normal: var(--color-base-80);
@@ -257,8 +177,6 @@ SOFTWARE.
    --prompt-border-color: var(--color-accent);
    --table-header-background: var(--color-base-05);
 
-   --nav-item-background-hover: transparent;
-   --nav-item-background-active: transparent;
    --nav-item-color: var(--color-base-70);
    --nav-item-color-hover: var(--color-base-70);
    --nav-item-color-active: var(--color-base-70);
@@ -277,7 +195,7 @@ SOFTWARE.
    --code-important: rgb(198, 120, 221);
 }
 
-/* Element: mobile-light-theme */
+/* Title: light-theme-mobile */
 .is-mobile.theme-light {
    --color-base-00: hsl(0, 0%, 96.8%);
    --color-base-05: hsl(0, 0%, 98.8%);
@@ -291,15 +209,19 @@ SOFTWARE.
    --color-base-60: hsl(0, 0%, 62.8%);
    --color-base-70: hsl(0, 0%, 10.8%);
    --color-base-80: hsl(0, 0%, 06.8%);
-   --color-base-100: hsl(0, 0%, 02.8%);
-}
-
-.theme-light .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 100%, var(--accent-000) 0%);
+   --color-base-100: hsl(0, 0%, 2.8%);
 }
 
 body {
-   /* Element: graph-settings */
+   /* Title: headings */
+   --h1-color: var(--color-accent);
+   --h2-color: var(--color-accent);
+   --h3-color: var(--color-accent);
+   --h4-color: var(--color-accent);
+   --h5-color: var(--color-accent);
+   --h6-color: var(--color-accent);
+
+   /* Title: graph-settings */
    --graph-controls-width: 240px;
    --graph-node: var(--text-muted);
    --graph-text: var(--text-normal);
@@ -309,49 +231,49 @@ body {
    --graph-node-focused: var(--background-modifier-border-focus);
    --graph-line: var(--color-base-45, var(--background-modifier-border-focus));
 
-   /* Element: links */
+   /* Title: workspace */
+   --nav-item-background-hover: transparent;
+   --nav-item-background-active: transparent;
+   --nav-indentation-guide-color: rgba(var(--mono-rgb-100), 0.08);
+
+   /* Title: links */
    --link-decoration: none;
    --link-decoration-hover: none;
    --link-external-decoration: none;
    --link-external-decoration-hover: none;
 
-   /* Element: callouts */
+   /* Title: callouts */
    --callout-padding: 24px;
    --callout-border-width: 1px;
    --callout-radius: var(--border-radius-m);
 
-   /* Element: checkbox */
+   /* Title: checkbox */
    --checklist-done-decoration: none;
    --checklist-done-color: var(--color-base-35);
 
-   /* Element: markdown */
+   /* Title: markdown */
    --bold-color: var(--color-accent);
    --italic-color: var(--color-accent);
 
-   /* Element: scrollbar */
+   /* Title: scrollbar */
    --scrollbar-thumb-bg: none;
-
-   /* Element: directory */
-   --nav-indentation-guide-color: rgba(var(--mono-rgb-100), 0.08);
 }
 
-/* Element: ul */
+/* Title: ul-type */
 ul {
    list-style-type: circle;
 }
 
-/* Element: img */
+.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 {
+   padding-left: 10px;
+}
+
+/* Title: images */
 img {
    max-width: 100%;
    border-radius: var(--border-radius-m);
 }
 
-/* Element: img-tag */
-.nav-file-tag {
-   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
-}
-
-/* Element: img-name */
 .image-embed::after {
    display: block;
    content: attr(src);
@@ -360,13 +282,22 @@ img {
    font-family: var(--font-interface);
 }
 
-/* Element: link-icon */
+.nav-file-tag {
+   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
+}
+
+/* Title: links-icon */
 .external-link {
    padding-right: unset;
    background-image: none;
 }
 
-/* Element: header-title */
+/* Title: folder-titles */
+.nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
+}
+
+/* Title: header-title */
 .view-header-title {
    margin: 0 auto;
    max-width: 80%;
@@ -381,18 +312,18 @@ img {
    text-overflow: ellipsis;
 }
 
-/* Element: header-padding */
+/* Title: header-padding */
 .cm-s-obsidian .cm-line.HyperMD-header {
    padding-top: .7em;
 }
 
-/* Element: breadcrumb */
+/* Title: breadcrumb */
 .view-header-breadcrumb,
 .view-header-breadcrumb-separator {
    display: none;
 }
 
-/* Element: codeblock */
+/* Title: codeblock */
 .HyperMD-codeblock-begin {
    border-top: 1px solid var(--color-base-10);
    border-radius: var(--border-radius-m) var(--border-radius-m) 0 0 !important;
@@ -407,7 +338,7 @@ img {
    border-radius: 0 0 var(--border-radius-m) var(--border-radius-m) !important;
 }
 
-/* Element: inline-fields [key:: value] */
+/* Title: [key:: value] */
 .inline-field-key {
    background-color: var(--color-base-10) !important;
    border-radius: var(--border-radius-s) 0 0 var(--border-radius-s);
@@ -418,41 +349,24 @@ img {
    border-radius: 0 var(--border-radius-s) var(--border-radius-s) 0;
 }
 
-/* Element: inline-fields (key:: value) */
+/* Title: (key:: value) */
 .inline-field-standalone-value {
    background-color: var(--color-base-10) !important;
    border-radius: var(--border-radius-s);
 }
 
-/* Element: properties */
-.metadata-container {
-   margin-block-end: .35rem;
-}
-
-.metadata-property-key,
-.metadata-property-value {
-   border: none;
-}
-
-.metadata-properties-heading {
-   display: none;
-}
-
-/* Element: vault-name-chevron */
-/* Element: properties-button */
-/* Element: collapse-button */
+/* Title: vault-name-chevron */
+/* Title: properties-button */
+/* Title: collapse-button */
+/* Title: properties-date */
 .workspace-drawer-header-name-chevron,
 .metadata-add-button .text-button-icon,
-.clickable-icon.nav-action-button:nth-child(4) {
-   display: none;
-}
-
-/* Element: properties-date */
+.clickable-icon.nav-action-button:nth-child(4),
 .metadata-property-value .clickable-icon[aria-label="Open daily note"] {
    display: none;
 }
 
-/* Element: files-indentation */
+/* Title: nav-indentation */
 .tree-item-inner {
    margin-left: 2px
 }
@@ -461,38 +375,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
    box-shadow: none;
 }
 
-/* Element: callout */
-.cm-embed-block.cm-callout:hover {
-   border-radius: var(--border-radius-m) !important;
-}
-
-.callout-content p,
-.markdown-rendered ul,
-.markdown-rendered ol {
-   margin-bottom: 0;
-}
-
-.callout-content ul li {
-   margin-left: 24px;
-}
-
-.callout-title-inner {
-   margin-left: 4px;
-}
-
-.callout-icon svg {
-   display: none;
-}
-
-.callout-icon::before {
-   content: '';
-   display: inline-block;
-   width: 19px;
-   height: 19px;
-   margin-right: 2px;
-}
-
-/* Element: dataview */
+/* Title: dataview-plugin */
 .dataview.list-view-ul {
    margin-bottom: revert;
 }
@@ -581,7 +464,42 @@ ul.dataview-ul {
    border: none !important;
 }
 
-/* Element: custom-callouts */
+/* Title: callouts */
+.cm-embed-block.cm-callout:hover {
+   border-radius: var(--border-radius-m) !important;
+}
+
+.callout-content p,
+.markdown-rendered ul,
+.markdown-rendered ol {
+   margin-bottom: 0;
+}
+
+.callout-content ul li {
+   margin-left: 24px;
+}
+
+.callout-title-inner {
+   margin-left: 4px;
+}
+
+.callout-icon svg {
+   display: none;
+}
+
+.callout-icon::before {
+   content: '';
+   display: inline-block;
+   width: 19px;
+   height: 19px;
+   margin-right: 2px;
+}
+
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
+   box-shadow: none;
+}
+
+/* Title: custom-callouts */
 [data-callout="note"] .callout-icon::before {
    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="rgb(59, 130, 246)" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"/></svg>');
 }
@@ -922,7 +840,17 @@ ul.dataview-ul {
    border-color: rgba(241, 87, 87, 0.25);
 }
 
-/* Element: properties */
+/* Title: properties */
+.metadata-container {
+   margin-block-end: .35rem;
+}
+
+.metadata-property-key,
+.metadata-property-value,
+.metadata-properties-heading {
+   border: none;
+}
+
 .metadata-property .metadata-property-icon svg {
    display: none;
 }
@@ -938,12 +866,12 @@ ul.dataview-ul {
    margin-left: var(--size-4-1);
 }
 
-/* Element: property-tags */
+/* Title: properties-tags */
 [data-property-key="tags"] .multi-select-pill-remove-button {
    opacity: 0.65;
 }
 
-/* Element: properties-icons */
+/* Title: properties-icons */
 .metadata-property[data-property-type="text"] .metadata-property-icon::before {
    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M11.02%2019.5H7.5C6.88%2019.5%206.33%2019.48%205.84%2019.41C3.21%2019.12%202.5%2017.88%202.5%2014.5V9.5C2.5%206.12%203.21%204.88%205.84%204.59C6.33%204.52%206.88%204.5%207.5%204.5H10.96%22%20stroke%3D%22%23D8D8D8%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M15.02%204.5H16.5C17.12%204.5%2017.67%204.52%2018.16%204.59C20.79%204.88%2021.5%206.12%2021.5%209.5V14.5C21.5%2017.88%2020.79%2019.12%2018.16%2019.41C17.67%2019.48%2017.12%2019.5%2016.5%2019.5H15.02%22%20stroke%3D%22%23D8D8D8%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M15%202V22%22%20stroke%3D%22%23D8D8D8%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M8%208.5V15.5%22%20stroke%3D%22%23D8D8D8%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
 }
@@ -1148,8 +1076,8 @@ ul.dataview-ul {
    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.4001 9.50006L13.9001 11.0001C14.8001 11.6001 14.8001 12.5001 13.9001 13.1001L11.4001 14.6001C10.4001 15.2001 9.6001 14.7001 9.6001 13.6001V10.6001C9.6001 9.30006 10.4001 8.90006 11.4001 9.50006Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
-/* Element: cssclasses */
-/* Element: h1-h6-(position) */
+/* Title: cssclasses */
+/* Title: h1-h6-(position) */
 .h1-center :is(h1, .HyperMD-header.HyperMD-header-1),
 .h2-center :is(h2, .HyperMD-header.HyperMD-header-2),
 .h3-center :is(h3, .HyperMD-header.HyperMD-header-3),
@@ -1168,7 +1096,7 @@ ul.dataview-ul {
    text-align: right;
 }
 
-/* Element: h1-h6-(color) */
+/* Title: h1-h6-(color) */
 .h1-accent :is(h1, .HyperMD-header.HyperMD-header-1),
 .h2-accent :is(h2, .HyperMD-header.HyperMD-header-2),
 .h3-accent :is(h3, .HyperMD-header.HyperMD-header-3),
@@ -1295,7 +1223,7 @@ ul.dataview-ul {
    color: var(--color-white) !important;
 }
 
-/* Element: bold-(color) */
+/* Title: bold-(color) */
 .bold-accent, .strong-accent, .b-accent {
    --bold-color: var(--color-accent);
 }
@@ -1352,7 +1280,7 @@ ul.dataview-ul {
    --bold-color: var(--color-white);
 }
 
-/* Element: italic-(color) */
+/* Title: italic-(color) */
 .italic-accent, .em-accent, .i-accent {
    --italic-color: var(--color-accent);
 }
@@ -1409,7 +1337,7 @@ ul.dataview-ul {
    --italic-color: var(--color-white);
 }
 
-/* Element: quote-(color) */
+/* Title: quote-(color) */
 .quote-accent {
    --blockquote-border-color: var(--color-accent);
 }
@@ -1466,9 +1394,9 @@ ul.dataview-ul {
    --blockquote-border-color: var(--color-white);
 }
 
-/* Element: desktop */
+/* Title: desktop */
 @media (min-width: 768px) {
-   /* Element: desktop-tracker */
+   /* Title: desktop-tracker */
    .tree-item-inner.nav-file-title-content {
       position: relative;
       overflow: hidden;
@@ -1500,7 +1428,7 @@ ul.dataview-ul {
       margin-right: 24px;
    }
 
-   /* Element: properties-border */
+   /* Title: properties-border */
    .metadata-property,
    .metadata-property:hover,
    .metadata-property:focus,
@@ -1508,7 +1436,7 @@ ul.dataview-ul {
       box-shadow: none;
    }
 
-   /* Element: properties-button */
+   /* Title: properties-button */
    .metadata-add-button.text-icon-button,
    .metadata-add-button.text-icon-button:hover,
    .metadata-add-button.text-icon-button:focus,
@@ -1517,7 +1445,7 @@ ul.dataview-ul {
       background-color: transparent;
    }
 
-   /* Element: unnecessary-icons */
+   /* Title: unnecessary-icons */
    .svg-icon.open-vault,
    .svg-icon.lucide-chevrons-up-down,
    .search-result-container.mod-global-search .search-empty-state {
@@ -1525,9 +1453,9 @@ ul.dataview-ul {
    }
 }
 
-/* Element: mobile */
+/* Title: mobile */
 @media (max-width: 768px) {
-   /* Element: mobile-tracker */
+   /* Title: mobile-tracker */
    .nav-file-title {
       position: relative;
       overflow: hidden;
@@ -1555,17 +1483,17 @@ ul.dataview-ul {
       opacity: 1;
    }
 
-   /* Element: sidebar-title */
+   /* Title: sidebar-title */
    .workspace-drawer-header-name-text {
       white-space: nowrap;
    }
 
-   /* Element: tab-chevron */
+   /* Title: workspace-icon */
    .workspace-drawer-active-tab-chevron {
       display: none;
    }
 
-   /* Element: tab-background */
+   /* Title: workspace-background */
    .workspace-drawer-active-tab-header,
    .workspace-drawer-active-tab-header:hover,
    .workspace-drawer-active-tab-header:focus,
@@ -1573,7 +1501,7 @@ ul.dataview-ul {
       background-color: transparent;
    }
 
-   /* Element: outline-workspace */
+   /* Title: workspace-outline */
    .tree-item-self.is-clickable.nav-file-title.tappable,
    .tree-item-self.is-clickable.nav-file-title.tappable:hover,
    .tree-item-self.is-clickable.nav-file-title.tappable:active,
@@ -1588,12 +1516,12 @@ ul.dataview-ul {
       background: transparent;
    }
 
-   /* Element: search-plugin */
+   /* Title: search-plugin */
    .workspace-drawer-active-tab-content .workspace-leaf-content[data-type="search"] .search-empty-state {
       display: none;
    }
 
-   /* Element: calendar-plugin */
+   /* Title: calendar-plugin */
    .title.svelte-1vwr9dd {
       padding-left: 5px;
    }
