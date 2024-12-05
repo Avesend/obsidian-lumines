@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.7.0
+Lumines Obsidian Version: 2.7.1
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -43,6 +43,7 @@ SOFTWARE.
 :root {
    /* Title: accent-colors */
    --color-accent-100: hsl(258, 88%, 66%);
+   --color-accent-000: hsl(0, 0%, 100%);
 
    /* Title: design-colors */
    --color-red: hsl(0, 91%, 71%);
@@ -255,6 +256,10 @@ body {
    --callout-border-width: 1px;
    --callout-radius: var(--border-radius-m);
 
+   /* Title: popovers */
+   --popover-width: 550px;
+   --popover-height: 350px;
+
    /* Title: checkbox */
    --checklist-done-decoration: none;
    --checklist-done-color: var(--color-base-35);
@@ -291,7 +296,7 @@ img {
 }
 
 .nav-file-tag {
-   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
+   color: color-mix(in srgb, var(--color-accent) 70%, var(--color-accent-000) 30%);
 }
 
 /* Title: links-icon */
@@ -302,7 +307,7 @@ img {
 
 /* Title: folder-titles */
 .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 70%, var(--accent-000) 30%);
+   color: color-mix(in srgb, var(--color-accent) 70%, var(--color-accent-000) 30%);
 }
 
 /* Title: header-title */
