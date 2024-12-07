@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.8.2
+Lumines Obsidian Version: 2.8.3
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -304,7 +304,7 @@ img {
 }
 
 .nav-file-tag {
-   color: color-mix(in srgb, var(--color-accent) 70%, var(--color-accent-000) 30%);
+   color: color-mix(in srgb, var(--color-accent) 80%, var(--color-accent-000) 20%);
 }
 
 /* Title: links-icon */
@@ -315,7 +315,7 @@ img {
 
 /* Title: folder-titles */
 .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent) 70%, var(--color-accent-000) 30%);
+   color: color-mix(in srgb, var(--color-accent) 80%, var(--color-accent-000) 20%);
 }
 
 /* Title: header-title */
@@ -1696,3 +1696,119 @@ ul.dataview-ul {
       margin-right: 4px;
    }
 }
+
+/* Title: style-settings-plugin */
+/* Title: folder-titles */
+.folder-titles-accent .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-accent) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-red .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-red) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-orange .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-orange) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-yellow .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-yellow) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-lime .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-lime) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-green .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-green) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-cyan .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-cyan) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-sky .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-sky) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-blue .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-blue) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-indigo .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-indigo) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-violet .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-violet) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-pink .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-pink) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-gray .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-gray) 80%, var(--color-accent-000) 20%);
+}
+
+.folder-titles-white .nav-folder .nav-folder-title {
+   color: color-mix(in srgb, var(--color-white) 80%, var(--color-accent-000) 20%);
+}
+
+/*@settings
+name: Lumines Theme
+id: lumines-theme
+settings:
+   -
+      id: folder-titles-color
+      title: Folder titles color
+      title.ru: Цвет названий папок
+      description: Choose a color for folder titles
+      description.ru: Выберите цвет для названий папок
+      type: class-select
+      allowEmpty: false
+      default: folder-titles-accent
+      options:
+      -
+         label: Accent
+         value: folder-titles-accent
+      -
+         label: Red
+         value: folder-titles-red
+      -
+         label: Orange
+         value: folder-titles-orange
+      -
+         label: Yellow
+         value: folder-titles-yellow
+      -
+         label: Lime
+         value: folder-titles-lime
+      -
+         label: Green
+         value: folder-titles-green
+      -
+         label: Cyan
+         value: folder-titles-cyan
+      -
+         label: Sky
+         value: folder-titles-sky
+      -
+         label: Blue
+         value: folder-titles-blue
+      -
+         label: Indigo
+         value: folder-titles-indigo
+      -
+         label: Violet
+         value: folder-titles-violet
+      -
+         label: Pink
+         value: folder-titles-pink
+      -
+         label: Gray
+         value: folder-titles-gray
+      -
+         label: White
+         value: folder-titles-white
+*/
