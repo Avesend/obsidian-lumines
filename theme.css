@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.8.1
+Lumines Obsidian Version: 2.8.2
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -1479,7 +1479,7 @@ ul.dataview-ul {
       --status-bar-border-width: 0px;
       --status-bar-position: related;
       
-      --tab-outline-color: var(--color-base-20);
+      --tab-outline-color: transparent;
       --ribbon-background: var(--color-base-00);
       --status-bar-background: var(--color-base-05);
       --titlebar-background: var(--color-base-05);
@@ -1499,7 +1499,7 @@ ul.dataview-ul {
    .workspace-ribbon.mod-left.is-collapsed {
       padding-block: 8px;
       height: fit-content;
-      border: 1px solid var(--color-base-20);
+      border: 1px solid var(--color-base-10);
    }
 
    .workspace-ribbon.mod-left:before {
@@ -1538,6 +1538,7 @@ ul.dataview-ul {
    .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
    .workspace-split.mod-right-split > .workspace-leaf-resize-handle,
    .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle {
+      border-color: var(--color-base-10);
       height: calc(var(--divider-vertical-height) - var(--header-height));
    }
 
@@ -1597,10 +1598,20 @@ ul.dataview-ul {
       position: absolute;
       border-radius: 8px;
       width: calc(100% - 64px);
-      height: calc(100% - 36px);
+      height: calc(100% - 40px);
       right: 0px;
       bottom: 0px;
-      box-shadow: 0px 0px 0px 1px var(--color-base-20);
+      box-shadow: 0px 0px 0px 1px var(--color-base-10);
+   }
+
+   .workspace-tab-header-container,
+   .workspace-tabs.mod-top.mod-active,
+   .workspace-split.mod-vertical.mod-root,
+   .workspace-tabs.mod-top.mod-top-left-space,
+   .workspace-tabs.mod-top.mod-top-right-space,
+   .workspace-split.mod-horizontal.mod-sidedock.mod-left-split,
+   .workspace-split.mod-horizontal.mod-sidedock.mod-right-split {
+      background-color: transparent !important;
    }
 }
 
