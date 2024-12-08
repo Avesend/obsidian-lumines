@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.8.4
+Lumines Obsidian Version: 2.8.5
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -313,7 +313,7 @@ img {
    background-image: none;
 }
 
-/* Title: folder-titles */
+/* Title: folder-titles | style-settings */
 .nav-folder .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 80%, var(--color-accent-000) 20%);
 }
@@ -378,11 +378,9 @@ img {
 
 /* Title: vault-name-chevron */
 /* Title: properties-button */
-/* Title: collapse-button */
 /* Title: properties-date */
 .workspace-drawer-header-name-chevron,
 .metadata-add-button .text-button-icon,
-.clickable-icon.nav-action-button:nth-child(4),
 .metadata-property-value .clickable-icon[aria-label="Open daily note"] {
    display: none;
 }
@@ -483,6 +481,10 @@ ul.dataview-ul {
 
 .dataview.dataview-error-box {
    border: none !important;
+}
+
+.block-language-dataview.node-insert-event > table > tbody > tr > td > ul > li {
+   margin-inline-start: 0px;
 }
 
 /* Title: callouts */
@@ -1620,6 +1622,28 @@ ul.dataview-ul {
    --blockquote-border-color: var(--color-white);
 }
 
+/* Title: h-library */
+.h-library :is(h1, h2, h3, h4, h5, h6,
+.HyperMD-header.HyperMD-header-1,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6) {
+   padding-block: 8px;
+   font-weight: 625;
+   font-size: 1.125rem;
+   color: var(--color-accent) !important;
+}
+
+.h-library .cm-em,
+.h-library .cm-strong,
+.h-library :is(h2, h4,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-4) {
+   color: var(--syntax-default) !important;
+}
+
 /* Title: desktop */
 @media (min-width: 768px) {
    /* Title: desktop-tracker */
@@ -1672,9 +1696,9 @@ ul.dataview-ul {
    }
 
    /* Title: unnecessary-icons */
-   .svg-icon.open-vault,
-   .svg-icon.lucide-chevrons-up-down,
-   .search-result-container.mod-global-search .search-empty-state {
+   .menu .svg-icon.open-vault,
+   .search-result-container.mod-global-search .search-empty-state,
+   .workspace-sidedock-vault-profile .svg-icon.lucide-chevrons-up-down {
       display: none;
    }
 
@@ -1903,7 +1927,7 @@ ul.dataview-ul {
 }
 
 /* Title: style-settings-plugin */
-/* Title: folder-titles */
+/* Title: folder-titles | style-settings */
 .folder-titles-accent .nav-folder .nav-folder-title {
    color: color-mix(in srgb, var(--color-accent) 80%, var(--color-accent-000) 20%);
 }
@@ -1958,6 +1982,128 @@ ul.dataview-ul {
 
 .folder-titles-white .nav-folder .nav-folder-title {
    color: color-mix(in srgb, var(--color-white) 80%, var(--color-accent-000) 20%);
+}
+
+/* Title: reading-mode */
+.reading-mode .view-actions .view-action:has(.svg-icon.lucide-edit-3),
+.reading-mode .view-actions .view-action:has(.svg-icon.lucide-book-open) {
+   display: none;
+}
+
+/* Title: help-button */
+.help-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
+   display: none;
+}
+
+/* Title: expand-button */
+.expand-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down),
+.expand-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
+   display: none;
+}
+
+/* Title: sort-order */
+.sort-order .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
+   display: none;
+}
+
+/* Title: new-folder */
+.new-folder .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
+   display: none;
+}
+
+/* Title: new-note */
+.new-note .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
+   display: none;
+}
+
+/* Title: mobile-navbar */
+.mobile-navbar-actions {
+   display: flex;
+}
+
+/* Title: mobile-navbar-nth-child-1 */
+.nth-child-1-1 .mobile-navbar-action:nth-child(1) {
+   order: 1;
+}
+.nth-child-1-2 .mobile-navbar-action:nth-child(1) {
+   order: 2;
+}
+.nth-child-1-3 .mobile-navbar-action:nth-child(1) {
+   order: 3;
+}
+.nth-child-1-4 .mobile-navbar-action:nth-child(1) {
+   order: 4;
+}
+.nth-child-1-5 .mobile-navbar-action:nth-child(1) {
+   order: 5;
+}
+
+/* Title: mobile-navbar-nth-child-2 */
+.nth-child-2-1 .mobile-navbar-action:nth-child(2) {
+   order: 1;
+}
+.nth-child-2-2 .mobile-navbar-action:nth-child(2) {
+   order: 2;
+}
+.nth-child-2-3 .mobile-navbar-action:nth-child(2) {
+   order: 3;
+}
+.nth-child-2-4 .mobile-navbar-action:nth-child(2) {
+   order: 4;
+}
+.nth-child-2-5 .mobile-navbar-action:nth-child(2) {
+   order: 5;
+}
+
+/* Title: mobile-navbar-nth-child-3 */
+.nth-child-3-1 .mobile-navbar-action:nth-child(3) {
+   order: 1;
+}
+.nth-child-3-2 .mobile-navbar-action:nth-child(3) {
+   order: 2;
+}
+.nth-child-3-3 .mobile-navbar-action:nth-child(3) {
+   order: 3;
+}
+.nth-child-3-4 .mobile-navbar-action:nth-child(3) {
+   order: 4;
+}
+.nth-child-3-5 .mobile-navbar-action:nth-child(3) {
+   order: 5;
+}
+
+/* Title: mobile-navbar-nth-child-4 */
+.nth-child-4-1 .mobile-navbar-action:nth-child(4) {
+   order: 1;
+}
+.nth-child-4-2 .mobile-navbar-action:nth-child(4) {
+   order: 2;
+}
+.nth-child-4-3 .mobile-navbar-action:nth-child(4) {
+   order: 3;
+}
+.nth-child-4-4 .mobile-navbar-action:nth-child(4) {
+   order: 4;
+}
+.nth-child-4-5 .mobile-navbar-action:nth-child(4) {
+   order: 5;
+}
+
+/* Title: mobile-navbar-nth-child-5 */
+.nth-child-5-1 .mobile-navbar-action:nth-child(5) {
+   order: 1;
+}
+.nth-child-5-2 .mobile-navbar-action:nth-child(5) {
+   order: 2;
+}
+.nth-child-5-3 .mobile-navbar-action:nth-child(5) {
+   order: 3;
+}
+.nth-child-5-4 .mobile-navbar-action:nth-child(5) {
+   order: 4;
+}
+.nth-child-5-5 .mobile-navbar-action:nth-child(5) {
+   order: 5;
 }
 
 /*@settings
@@ -2016,4 +2162,184 @@ settings:
       -
          label: White
          value: folder-titles-white
+   -
+      id: reading-mode
+      title: Reading mode button
+      title.ru: Кнопка «Режим чтения»
+      description: Hide the reading mode button
+      description.ru: Скрыть кнопку «Режим чтения»
+      type: class-toggle
+      default: false
+   -
+      id: help-button
+      title: Profile help button
+      title.ru: Кнопка «Помощь» в профиле
+      description: Hide the help button
+      description.ru: Скрыть кнопку «Помощь»
+      type: class-toggle
+      default: false
+   -
+      id: expand-button
+      title: Expand all button
+      title.ru: Кнопка «Развернуть все»
+      description: Hide the expand all button
+      description.ru: Скрыть кнопку «Развернуть все»
+      type: class-toggle
+      default: false
+   -
+      id: sort-order
+      title: Sort order button
+      title.ru: Кнопка «Порядок сортировки»
+      description: Hide the sort order button
+      description.ru: Скрыть кнопку «Порядок сортировки»
+      type: class-toggle
+      default: false
+   -
+      id: new-folder
+      title: New folder button
+      title.ru: Кнопка «Создать папку»
+      description: Hide the new folder button
+      description.ru: Скрыть кнопку «Создать папку»
+      type: class-toggle
+      default: false
+   -
+      id: new-note
+      title: New note button
+      title.ru: Кнопка «Создать файл»
+      description: Hide the new note button
+      description.ru: Скрыть кнопку «Создать файл»
+      type: class-toggle
+      default: false
+   -
+      id: mobile-navbar
+      title: Mobile navbar order
+      title.ru: Порядок меню навигации
+      type: heading
+      level: 1
+      collapsed: true
+   -
+      id: mobile-navbar-nth-child-1
+      title: Navigate back button
+      title.ru: Кнопка «Вернуться назад»
+      description: Where will the button be located?
+      description.ru: На каком месте будет по списку?
+      type: class-select
+      allowEmpty: false
+      default: nth-child-1-1
+      options:
+      -
+         label: 1
+         value: nth-child-1-1
+      -
+         label: 2
+         value: nth-child-1-2
+      -
+         label: 3
+         value: nth-child-1-3
+      -
+         label: 4
+         value: nth-child-1-4
+      -
+         label: 5
+         value: nth-child-1-5
+   -
+      id: mobile-navbar-nth-child-2
+      title: Navigate forward button
+      title.ru: Кнопка «Вернуться вперед»
+      description: Where will the button be located?
+      description.ru: На каком месте будет по списку?
+      type: class-select
+      allowEmpty: false
+      default: nth-child-2-2
+      options:
+      -
+         label: 1
+         value: nth-child-2-1
+      -
+         label: 2
+         value: nth-child-2-2
+      -
+         label: 3
+         value: nth-child-2-3
+      -
+         label: 4
+         value: nth-child-2-4
+      -
+         label: 5
+         value: nth-child-2-5
+   -
+      id: mobile-navbar-nth-child-3
+      title: Find or Create button
+      title.ru: Кнопка «Найти или создать»
+      description: Where will the button be located?
+      description.ru: На каком месте будет по списку?
+      type: class-select
+      allowEmpty: false
+      default: nth-child-3-3
+      options:
+      -
+         label: 1
+         value: nth-child-3-1
+      -
+         label: 2
+         value: nth-child-3-2
+      -
+         label: 3
+         value: nth-child-3-3
+      -
+         label: 4
+         value: nth-child-3-4
+      -
+         label: 5
+         value: nth-child-3-5
+   -
+      id: mobile-navbar-nth-child-4
+      title: Open tabs button
+      title.ru: Кнопка «Открыть вкладки»
+      description: Where will the button be located?
+      description.ru: На каком месте будет по списку?
+      type: class-select
+      allowEmpty: false
+      default: nth-child-4-4
+      options:
+      -
+         label: 1
+         value: nth-child-4-1
+      -
+         label: 2
+         value: nth-child-4-2
+      -
+         label: 3
+         value: nth-child-4-3
+      -
+         label: 4
+         value: nth-child-4-4
+      -
+         label: 5
+         value: nth-child-4-5
+   -
+      id: mobile-navbar-nth-child-5
+      title: Ribbon menu button
+      title.ru: Кнопка «Ленточное меню»
+      description: Where will the button be located?
+      description.ru: На каком месте будет по списку?
+      type: class-select
+      allowEmpty: false
+      default: nth-child-5-5
+      options:
+      -
+         label: 1
+         value: nth-child-5-1
+      -
+         label: 2
+         value: nth-child-5-2
+      -
+         label: 3
+         value: nth-child-5-3
+      -
+         label: 4
+         value: nth-child-5-4
+      -
+         label: 5
+         value: nth-child-5-5
 */
