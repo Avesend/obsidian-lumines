@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.8.5
+Lumines Obsidian Version: 2.8.6
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -81,48 +81,6 @@ SOFTWARE.
    --color-base-70: hsl(0, 0%, 88.7%);
    --color-base-80: hsl(0, 0%, 92.7%);
    --color-base-100: hsl(0, 0%, 100%);
-
-   --background-primary: var(--color-base-00);
-   --background-secondary: var(--color-base-05);
-
-   --divider-color: var(--color-base-10);
-   --icon-color-active: var(--color-base-80);
-   --interactive-normal: var(--color-base-25);
-   --modal-border-color: var(--color-base-10);
-   --titlebar-background: var(--color-base-05);
-   --titlebar-background-focused: var(--color-base-05);
-   --tab-text-color-active: var(--color-base-80);
-   --tab-text-color-focused-active: var(--color-base-60);
-   --tab-text-color-focused-active-current: var(--color-base-80);
-   --background-modifier-active-hover: var(--color-accent);
-
-   --hr-color: var(--color-base-10);
-   --text-normal: var(--color-base-80);
-   --link-external-color: var(--tag-color);
-   --inline-title-color: var(--color-base-70);
-   --collapse-icon-color-collapsed: var(--color-accent);
-
-   --blockquote-background-color: transparent;
-   --blockquote-border-color: var(--color-accent);
-   --prompt-border-color: var(--color-accent);
-   --table-header-background: var(--color-base-05);
-
-   --nav-item-color: var(--color-base-70);
-   --nav-item-color-hover: var(--color-base-70);
-   --nav-item-color-active: var(--color-base-70);
-
-   --code-normal: var(--color-base-80);
-   --code-comment: var(--color-base-35);
-   --code-operator: var(--color-base-80);
-   --code-background: var(--color-base-05);
-   --code-punctuation: var(--color-base-60);
-   --code-tag: rgb(224, 108, 117);
-   --code-value: rgb(198, 120, 221);
-   --code-string: rgb(229, 192, 123);
-   --code-keyword: rgb(86, 182, 194);
-   --code-property: rgb(86, 182, 194);
-   --code-function: rgb(152, 195, 121);
-   --code-important: rgb(198, 120, 221);
 }
 
 /* Title: dark-theme-mobile */
@@ -157,7 +115,30 @@ SOFTWARE.
    --color-base-70: hsl(0, 0%, 10.8%);
    --color-base-80: hsl(0, 0%, 06.8%);
    --color-base-100: hsl(0, 0%, 2.8%);
+}
 
+/* Title: light-theme-mobile */
+.is-mobile.theme-light {
+   --color-base-00: hsl(0, 0%, 94.8%);
+   --color-base-05: hsl(0, 0%, 96.8%);
+   --color-base-10: hsl(0, 0%, 92.8%);
+   --color-base-20: hsl(0, 0%, 90.8%);
+   --color-base-25: hsl(0, 0%, 85.8%);
+   --color-base-30: hsl(0, 0%, 80.8%);
+   --color-base-35: hsl(0, 0%, 75.8%);
+   --color-base-40: hsl(0, 0%, 70.8%);
+   --color-base-50: hsl(0, 0%, 65.8%);
+   --color-base-60: hsl(0, 0%, 60.8%);
+   --color-base-70: hsl(0, 0%, 10.8%);
+   --color-base-80: hsl(0, 0%, 06.8%);
+   --color-base-100: hsl(0, 0%, 2.8%);
+}
+
+body {
+   /* Title: font */
+   --font-default: "JetBrains Mono", monospace;
+
+   /* Title: theme */
    --background-primary: var(--color-base-00);
    --background-secondary: var(--color-base-05);
 
@@ -199,28 +180,6 @@ SOFTWARE.
    --code-property: rgb(86, 182, 194);
    --code-function: rgb(152, 195, 121);
    --code-important: rgb(198, 120, 221);
-}
-
-/* Title: light-theme-mobile */
-.is-mobile.theme-light {
-   --color-base-00: hsl(0, 0%, 94.8%);
-   --color-base-05: hsl(0, 0%, 96.8%);
-   --color-base-10: hsl(0, 0%, 92.8%);
-   --color-base-20: hsl(0, 0%, 90.8%);
-   --color-base-25: hsl(0, 0%, 85.8%);
-   --color-base-30: hsl(0, 0%, 80.8%);
-   --color-base-35: hsl(0, 0%, 75.8%);
-   --color-base-40: hsl(0, 0%, 70.8%);
-   --color-base-50: hsl(0, 0%, 65.8%);
-   --color-base-60: hsl(0, 0%, 60.8%);
-   --color-base-70: hsl(0, 0%, 10.8%);
-   --color-base-80: hsl(0, 0%, 06.8%);
-   --color-base-100: hsl(0, 0%, 2.8%);
-}
-
-body {
-   /* Title: font */
-   --font-default: "JetBrains Mono", monospace;
 
    /* Title: headings */
    --h1-color: var(--color-accent);
@@ -865,12 +824,16 @@ ul.dataview-ul {
 
 /* Title: properties */
 .metadata-container {
+   padding-top: 0;
    margin-block-end: .35rem;
 }
 
-.metadata-property-key,
-.metadata-property-value,
 .metadata-properties-heading {
+   display: none;
+}
+
+.metadata-property-key,
+.metadata-property-value {
    border: none;
 }
 
