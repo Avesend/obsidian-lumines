@@ -4,19 +4,19 @@
 
 ![](assets/readme-lumines.png)
 
-<div><p>Lumines is a theme for Obsidian that improves the default style and fixes interface issues, enhancing usability and accessibility without drastic changes. The theme also includes useful additions that make note-taking more comfortable and enjoyable, encouraging users to return to their workspace.</p></div>
+<div><p>Lumines is an Obsidian theme that refines the default style and addresses interface issues, improving usability and accessibility while keeping the original look. It also adds useful enhancements for better note-taking.</p></div>
 
-<h2>Icons for each type of property</h2>
+<h2>Dynamic Icons for Property Types</h2>
 
 ![](assets/readme-cover-1.png)
 
-<div><p>Icons in a unified style have been added, which automatically change depending on the type of properties, ensuring quick visual identification of data. Various property types are supported, including text, lists, numbers, dates, and others.</p></div>
+<div><p>Unified icons automatically adapt to property types such as text, lists, numbers, and dates, maintaining a clean and consistent visual style across all data types.</p></div>
 
-<h2>Custom icons for property names</h2>
+<h2>Custom Icons for Property Names</h2>
 
 ![](assets/readme-cover-2.png)
 
-<div><p>Choose the appropriate icon based on the value of the properties. Over 40 icons are available to choose from. Icons change depending on the property names and are independent of their types, making the process flexible and convenient.</p></div>
+<div><p>Choose from over 45 icons that can be assigned to property names. These icons are not tied to property types, giving you more flexibility to personalize your workspace.</p></div>
 
 <details>
    <summary>Available icons</summary>
@@ -71,11 +71,11 @@
    </p>
 </details>
 
-<h2>The appearance of the workspace</h2>
+<h2>Real-Time Styling with CSSClasses</h2>
 
 ![](assets/readme-cover-3.png)
 
-<div><p>Create unique visual solutions. Seamlessly change the appearance of your notes. You can use CSS classes in the property named "cssclasses" to interact with this feature. Detailed customization of notes is now possible in real-time.</p></div>
+<div><p>Use the <b>cssclasses</b> property to assign custom CSS classes and modify note designs. This feature supports instant updates, allowing you to refine your workspace effortlessly.</p></div>
 
 <details>
    <summary>How to use it?</summary>
@@ -258,11 +258,11 @@
    </p>
 </details>
 
-<h2>All callouts have been updated</h2>
+<h2>Enhanced and Redesigned Callouts</h2>
 
 ![](assets/readme-cover-4.png)
 
-<div><p>Callouts have been completely redesigned. Some visual bugs have been fixed, and improvements have been made to their appearance. Each callout now has an updated icon and a changed accent color.</p></div>
+<div><p>Callouts now feature redesigned icons, refreshed accent colors, and resolved visual issues. These improvements enhance their appearance and usability.</p></div>
 
 <details>
    <summary>New callouts</summary>
