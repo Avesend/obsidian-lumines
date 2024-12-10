@@ -228,7 +228,8 @@ body {
    --italic-color: var(--color-accent);
 
    /* Title: scrollbar */
-   --scrollbar-thumb-bg: none;
+   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.05);
+   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
 
    /* Title: modals */
    --modal-radius: var(--border-radius-m);
