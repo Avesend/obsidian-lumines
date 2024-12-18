@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.8.6
+Lumines Obsidian Version: 2.8.7
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -182,12 +182,12 @@ body {
    --code-important: rgb(198, 120, 221);
 
    /* Title: headings */
-   --h1-color: var(--color-accent);
-   --h2-color: var(--color-accent);
-   --h3-color: var(--color-accent);
-   --h4-color: var(--color-accent);
-   --h5-color: var(--color-accent);
-   --h6-color: var(--color-accent);
+   --h1-color: color-mix(in srgb, var(--color-accent) 95%, var(--color-accent-000) 5%);
+   --h2-color: color-mix(in srgb, var(--color-accent) 95%, var(--color-accent-000) 5%);
+   --h3-color: color-mix(in srgb, var(--color-accent) 95%, var(--color-accent-000) 5%);
+   --h4-color: color-mix(in srgb, var(--color-accent) 95%, var(--color-accent-000) 5%);
+   --h5-color: color-mix(in srgb, var(--color-accent) 95%, var(--color-accent-000) 5%);
+   --h6-color: color-mix(in srgb, var(--color-accent) 95%, var(--color-accent-000) 5%);
 
    /* Title: graph-settings */
    --graph-controls-width: 240px;
@@ -224,8 +224,8 @@ body {
    --checklist-done-color: var(--color-base-35);
 
    /* Title: markdown */
-   --bold-color: var(--color-accent);
-   --italic-color: var(--color-accent);
+   --bold-color: color-mix(in srgb, var(--color-accent) 80%, var(--color-accent-000) 20%);
+   --italic-color: color-mix(in srgb, var(--color-accent) 80%, var(--color-accent-000) 20%);
 
    /* Title: scrollbar */
    --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.05);
