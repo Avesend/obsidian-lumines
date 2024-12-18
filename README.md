@@ -81,8 +81,9 @@
    <summary>How to use it?</summary>
    <p>
       <ol>
-         <li>Use the property named "cssclasses".</li>
-         <li>Enter the values below individually.</li>
+         <li>Open the note and find its frontmatter section.</li>
+         <li>Add the cssclasses property below the metadata.</li>
+         <li>Use styles like bold-indigo or highlight-white.</li>
       </ol>
    </p>
 </details>
@@ -254,6 +255,27 @@
          <li>quote-pink</li>
          <li>quote-gray</li>
          <li>quote-white</li>
+      </ul>
+   </p>
+</details>
+
+<details>
+   <summary>Highlight color</summary>
+   <p>
+      <ul>
+         <li>highlight-red</li>
+         <li>highlight-orange</li>
+         <li>highlight-yellow</li>
+         <li>highlight-lime</li>
+         <li>highlight-green</li>
+         <li>highlight-cyan</li>
+         <li>highlight-sky</li>
+         <li>highlight-blue</li>
+         <li>highlight-indigo</li>
+         <li>highlight-violet</li>
+         <li>highlight-pink</li>
+         <li>highlight-gray</li>
+         <li>highlight-white</li>
       </ul>
    </p>
 </details>
