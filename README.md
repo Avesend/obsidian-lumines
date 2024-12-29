@@ -6,15 +6,15 @@
 
 <div><p>Lumines is an Obsidian theme that refines the default style and addresses interface issues, improving usability and accessibility while keeping the original look. It also adds useful enhancements for better note-taking.</p></div>
 
-<h2>Dynamic Icons for Property Types</h2>
+<h2>Properties Icons (1/2)</h2>
 
-![](assets/readme-cover-1.png)
+![](assets/readme-cover-2.png)
 
 <div><p>Unified icons automatically adapt to property types such as text, lists, numbers, and dates, maintaining a clean and consistent visual style across all data types.</p></div>
 
-<h2>Custom Icons for Property Names</h2>
+<h2>Properties Icons (2/2)</h2>
 
-![](assets/readme-cover-2.png)
+![](assets/readme-cover-3.png)
 
 <div><p>Choose from over 45 icons that can be assigned to property names. These icons are not tied to property types, giving you more flexibility to personalize your workspace.</p></div>
 
@@ -71,9 +71,9 @@
    </p>
 </details>
 
-<h2>Real-Time Styling with CSSClasses</h2>
+<h2>Content Formatting</h2>
 
-![](assets/readme-cover-3.png)
+![](assets/readme-cover-4.png)
 
 <div><p>Use the <b>cssclasses</b> property to assign custom CSS classes and modify note designs. This feature supports instant updates, allowing you to refine your workspace effortlessly.</p></div>
 
@@ -280,9 +280,9 @@
    </p>
 </details>
 
-<h2>Enhanced and Redesigned Callouts</h2>
+<h2>Updated Callouts</h2>
 
-![](assets/readme-cover-4.png)
+![](assets/readme-cover-5.png)
 
 <div><p>Callouts now feature redesigned icons, refreshed accent colors, and resolved visual issues. These improvements enhance their appearance and usability.</p></div>
 
@@ -297,6 +297,51 @@
          <li>>[!list] Callout</li>
          <li>>[!alert] Callout</li>
          <li>>[!sort] Callout</li>
+      </ul>
+   </p>
+</details>
+
+<h2>Alternate Checkbox</h2>
+
+![](assets/readme-cover-6.png)
+
+<div><p>Customizable checkboxes now offer more flexibility with alternate symbols. You can replace the default "x" with any other symbol to alter the checkbox appearance.</p></div>
+
+<details>
+   <summary>New checkboxes</summary>
+   <p>
+      <ul>
+         <li>[c] checkmark</li>
+         <li>[C] cross</li>
+         <li>[+] plus</li>
+         <li>[-] minus</li>
+         <li>[!] exclamation</li>
+         <li>[?] question</li>
+         <li>[s] search</li>
+         <li>[o] circle</li>
+         <li>[U] up</li>
+         <li>[D] down</li>
+         <li>[l] like</li>
+         <li>[d] dislike</li>
+         <li>[*] star</li>
+         <li>[h] heart</li>
+         <li>[S] shield</li>
+         <li>[k] key</li>
+         <li>[I] idea</li>
+         <li>[A] alert</li>
+         <li>[$] dollar</li>
+         <li>[i] in-progress</li>
+         <li>[p] play</li>
+         <li>[P] pause</li>
+         <li>[R] repeat</li>
+         <li>[L] location</li>
+         <li>[u] undo</li>
+         <li>[r] redo</li>
+         <li>[>] calendar</li>
+         <li>[=] calculator</li>
+         <li>[t] text</li>
+         <li>[T] translate</li>
+         <li>[q] quote</li>
       </ul>
    </p>
 </details>
