@@ -1,8 +1,6 @@
-<div align="center"><img src="assets/avesend-favicon.png" alt=""/></div>
-
 <div align="center"><h1>Obsidian Lumines</h1><p><a href="https://github.com/Avesend/obsidian-lumines">Star Us on GitHub</a><span> ⭐️ </span><a href="https://github.com/Avesend/obsidian-lumines/issues">Request Feature</a></p></div>
 
-![](assets/readme-lumines.png)
+![](assets/readme-cover-1.png)
 
 <div><p>Lumines is an Obsidian theme that refines the default style and addresses interface issues, improving usability and accessibility while keeping the original look. It also adds useful enhancements for better note-taking.</p></div>
 
