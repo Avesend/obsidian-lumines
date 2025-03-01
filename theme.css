@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.9.6
+Lumines Obsidian Version: 2.9.7
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -190,6 +190,8 @@ body {
    --h5-color: var(--color-accent);
    --h6-color: var(--color-accent);
 
+   --header-padding-top: .7em;
+
    /* Title: graph-settings */
    --graph-controls-width: 240px;
    --graph-text: var(--text-normal);
@@ -285,11 +287,6 @@ img {
    font-size: 1.35em;
    white-space: nowrap;
    text-overflow: ellipsis;
-}
-
-/* Title: header-padding */
-.cm-s-obsidian .cm-line.HyperMD-header {
-   padding-top: .7em;
 }
 
 /* Title: breadcrumb */
@@ -2245,6 +2242,11 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    color: color-mix(in srgb, var(--color-white), var(--color-white) 10%);
 }
 
+/* Title: header-padding-top */
+.cm-s-obsidian .cm-line.HyperMD-header {
+   padding-top: var(--header-padding-top);
+}
+
 /* Title: help-button */
 .help-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
    display: none;
@@ -2420,8 +2422,8 @@ settings:
       id: folder-titles-color
       title: Folder titles color
       title.ru: Цвет названий папок
-      description: Choose a color for folder titles
-      description.ru: Выберите цвет для названий папок
+      description: Choose a color for folder titles.
+      description.ru: Выберите цвет для названий папок.
       type: class-select
       allowEmpty: false
       default: folder-titles-accent
@@ -2469,6 +2471,15 @@ settings:
          label: White
          value: folder-titles-white
    -
+      id: header-padding-top
+      title: Header padding top
+      title.ru: Отступ заголовков сверху
+      description: Enter padding top in em units.
+      description.ru: Отступ указывается только в em.
+      type: variable-number
+      default: .7
+      format: em
+   -
       title: Disable all buttons
       title.ru: Отключение всех кнопок
       type: heading
@@ -2478,88 +2489,88 @@ settings:
       id: help-button
       title: Help button
       title.ru: Кнопка «Помощь»
-      description: Hide the help button
-      description.ru: Скрыть кнопку «Помощь»
+      description: Hide the help button.
+      description.ru: Скрыть кнопку «Помощь».
       type: class-toggle
       default: false
    -
       id: new-note-button
       title: New note button
       title.ru: Кнопка «Создать файл»
-      description: Hide the new note button
-      description.ru: Скрыть кнопку «Создать файл»
+      description: Hide the new note button.
+      description.ru: Скрыть кнопку «Создать файл».
       type: class-toggle
       default: false
    -
       id: new-folder-button
       title: New folder button
       title.ru: Кнопка «Создать папку»
-      description: Hide the new folder button
-      description.ru: Скрыть кнопку «Создать папку»
+      description: Hide the new folder button.
+      description.ru: Скрыть кнопку «Создать папку».
       type: class-toggle
       default: false
    -
       id: sort-order-button
       title: Sort order button
       title.ru: Кнопка «Порядок сортировки»
-      description: Hide the sort order button
-      description.ru: Скрыть кнопку «Порядок сортировки»
+      description: Hide the sort order button.
+      description.ru: Скрыть кнопку «Порядок сортировки».
       type: class-toggle
       default: false
    -
       id: auto-reveal-button
       title: Auto-reveal button
       title.ru: Кнопка «Авто-раскрытие»
-      description: Hide the auto-reveal button
-      description.ru: Скрыть кнопку «Авто-раскрытие»
+      description: Hide the auto-reveal button.
+      description.ru: Скрыть кнопку «Авто-раскрытие».
       type: class-toggle
       default: false
    -
       id: expand-all-button
       title: Expand all button
       title.ru: Кнопка «Развернуть все»
-      description: Hide the expand all button
-      description.ru: Скрыть кнопку «Развернуть все»
+      description: Hide the expand all button.
+      description.ru: Скрыть кнопку «Развернуть все».
       type: class-toggle
       default: false
    -
       id: reading-mode-button
       title: Reading mode button
       title.ru: Кнопка «Режим чтения»
-      description: Hide the reading mode button
-      description.ru: Скрыть кнопку «Режим чтения»
+      description: Hide the reading mode button.
+      description.ru: Скрыть кнопку «Режим чтения».
       type: class-toggle
       default: false
    -
       id: search-settings-button
       title: Search settings button
       title.ru: Кнопка «Настройки поиска»
-      description: Hide the search settings button
-      description.ru: Скрыть кнопку «Настройки поиска»
+      description: Hide the search settings button.
+      description.ru: Скрыть кнопку «Настройки поиска».
       type: class-toggle
       default: false
    -
       id: collapse-results-button
       title: Collapse results button
       title.ru: Кнопка «Скрыть результаты»
-      description: Hide the collapse results button
-      description.ru: Скрыть кнопку «Скрыть результаты»
+      description: Hide the collapse results button.
+      description.ru: Скрыть кнопку «Скрыть результаты».
       type: class-toggle
       default: false
    -
       id: show-more-context-button
       title: Show more context button
       title.ru: Кнопка «Больше контекста»
-      description: Hide the show more context button
-      description.ru: Скрыть кнопку «Больше контекста»
+      description: Hide the show more context button.
+      description.ru: Скрыть кнопку «Больше контекста».
       type: class-toggle
       default: false
    -
       id: show-search-filter-button
       title: Show search filter button
       title.ru: Кнопка «Показать фильтр»
-      description: Hide the show search filter button
-      description.ru: Скрыть кнопку «Показать фильтр»
+      description: Hide the show search filter button.
+      description.ru: Скрыть кнопку «Показать фильтр».
       type: class-toggle
       default: false
    -
