@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.9.4
+Lumines Obsidian Version: 2.9.5
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -2245,35 +2245,40 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    color: color-mix(in srgb, var(--color-white), var(--color-white) 10%);
 }
 
-/* Title: reading-mode */
-.reading-mode .view-actions .view-action:has(.svg-icon.lucide-edit-3),
-.reading-mode .view-actions .view-action:has(.svg-icon.lucide-book-open) {
+/* Title: new-note-button */
+.new-note-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
+   display: none;
+}
+
+/* Title: new-folder-button */
+.new-folder-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
+   display: none;
+}
+
+/* Title: sort-order-button */
+.sort-order-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
+   display: none;
+}
+
+/* Title: auto-reveal-button */
+.auto-reveal-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-gallery-vertical) {
+   display: none;
+}
+
+/* Title: expand-all-button */
+.expand-all-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down),
+.expand-all-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
+   display: none;
+}
+
+/* Title: reading-mode-button */
+.reading-mode-button .view-actions .view-action:has(.svg-icon.lucide-edit-3),
+.reading-mode-button .view-actions .view-action:has(.svg-icon.lucide-book-open) {
    display: none;
 }
 
 /* Title: help-button */
 .help-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
-   display: none;
-}
-
-/* Title: expand-button */
-.expand-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down),
-.expand-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
-   display: none;
-}
-
-/* Title: sort-order */
-.sort-order .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
-   display: none;
-}
-
-/* Title: new-folder */
-.new-folder .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
-   display: none;
-}
-
-/* Title: new-note */
-.new-note .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
    display: none;
 }
 
@@ -2444,7 +2449,47 @@ settings:
          label: White
          value: folder-titles-white
    -
-      id: reading-mode
+      id: new-note-button
+      title: New note button
+      title.ru: Кнопка «Создать файл»
+      description: Hide the new note button
+      description.ru: Скрыть кнопку «Создать файл»
+      type: class-toggle
+      default: false
+   -
+      id: new-folder-button
+      title: New folder button
+      title.ru: Кнопка «Создать папку»
+      description: Hide the new folder button
+      description.ru: Скрыть кнопку «Создать папку»
+      type: class-toggle
+      default: false
+   -
+      id: sort-order-button
+      title: Sort order button
+      title.ru: Кнопка «Порядок сортировки»
+      description: Hide the sort order button
+      description.ru: Скрыть кнопку «Порядок сортировки»
+      type: class-toggle
+      default: false
+   -
+      id: auto-reveal-button
+      title: Auto-reveal button
+      title.ru: Кнопка «Авто-раскрытие»
+      description: Hide the auto-reveal button
+      description.ru: Скрыть кнопку «Авто-раскрытие»
+      type: class-toggle
+      default: false
+   -
+      id: expand-all-button
+      title: Expand all button
+      title.ru: Кнопка «Развернуть все»
+      description: Hide the expand all button
+      description.ru: Скрыть кнопку «Развернуть все»
+      type: class-toggle
+      default: false
+   -
+      id: reading-mode-button
       title: Reading mode button
       title.ru: Кнопка «Режим чтения»
       description: Hide the reading mode button
@@ -2457,38 +2502,6 @@ settings:
       title.ru: Кнопка «Помощь» в профиле
       description: Hide the help button
       description.ru: Скрыть кнопку «Помощь»
-      type: class-toggle
-      default: false
-   -
-      id: expand-button
-      title: Expand all button
-      title.ru: Кнопка «Развернуть все»
-      description: Hide the expand all button
-      description.ru: Скрыть кнопку «Развернуть все»
-      type: class-toggle
-      default: false
-   -
-      id: sort-order
-      title: Sort order button
-      title.ru: Кнопка «Порядок сортировки»
-      description: Hide the sort order button
-      description.ru: Скрыть кнопку «Порядок сортировки»
-      type: class-toggle
-      default: false
-   -
-      id: new-folder
-      title: New folder button
-      title.ru: Кнопка «Создать папку»
-      description: Hide the new folder button
-      description.ru: Скрыть кнопку «Создать папку»
-      type: class-toggle
-      default: false
-   -
-      id: new-note
-      title: New note button
-      title.ru: Кнопка «Создать файл»
-      description: Hide the new note button
-      description.ru: Скрыть кнопку «Создать файл»
       type: class-toggle
       default: false
    -
