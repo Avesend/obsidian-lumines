@@ -43,7 +43,6 @@
          <li>year</li>
          <li>link</li>
          <li>subject</li>
-         <li>related</li>
          <li>save</li>
          <li>lovely</li>
          <li>camera</li>
