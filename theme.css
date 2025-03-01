@@ -5,7 +5,7 @@ Created by Daniel (@Avesend) | https://github.com/Avesend/obsidian-lumines
 
 --------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.9.5
+Lumines Obsidian Version: 2.9.6
 Support Obsidian Version: 1.0.0+
 
 --------------------------------------------------------------------------------
@@ -2245,6 +2245,11 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    color: color-mix(in srgb, var(--color-white), var(--color-white) 10%);
 }
 
+/* Title: help-button */
+.help-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
+   display: none;
+}
+
 /* Title: new-note-button */
 .new-note-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
    display: none;
@@ -2277,8 +2282,23 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    display: none;
 }
 
-/* Title: help-button */
-.help-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
+/* Title: search-settings-button */
+.search-settings-button .search-row .clickable-icon:has(.svg-icon.lucide-sliders-horizontal) {
+   display: none;
+}
+
+/* Title: collapse-results-button */
+.collapse-results-button .nav-header .clickable-icon:has(.svg-icon.lucide-list) {
+   display: none;
+}
+
+/* Title: show-more-context-button */
+.show-more-context-button .nav-header .clickable-icon:has(.svg-icon.lucide-move-vertical) {
+   display: none;
+}
+
+/* Title: show-search-filter-button */
+.show-search-filter-button .nav-header .clickable-icon:has(.svg-icon.lucide-search) {
    display: none;
 }
 
@@ -2449,6 +2469,20 @@ settings:
          label: White
          value: folder-titles-white
    -
+      title: Disable all buttons
+      title.ru: Отключение всех кнопок
+      type: heading
+      level: 1
+      collapsed: true
+   -
+      id: help-button
+      title: Help button
+      title.ru: Кнопка «Помощь»
+      description: Hide the help button
+      description.ru: Скрыть кнопку «Помощь»
+      type: class-toggle
+      default: false
+   -
       id: new-note-button
       title: New note button
       title.ru: Кнопка «Создать файл»
@@ -2497,15 +2531,38 @@ settings:
       type: class-toggle
       default: false
    -
-      id: help-button
-      title: Profile help button
-      title.ru: Кнопка «Помощь» в профиле
-      description: Hide the help button
-      description.ru: Скрыть кнопку «Помощь»
+      id: search-settings-button
+      title: Search settings button
+      title.ru: Кнопка «Настройки поиска»
+      description: Hide the search settings button
+      description.ru: Скрыть кнопку «Настройки поиска»
       type: class-toggle
       default: false
    -
-      id: mobile-navbar
+      id: collapse-results-button
+      title: Collapse results button
+      title.ru: Кнопка «Скрыть результаты»
+      description: Hide the collapse results button
+      description.ru: Скрыть кнопку «Скрыть результаты»
+      type: class-toggle
+      default: false
+   -
+      id: show-more-context-button
+      title: Show more context button
+      title.ru: Кнопка «Больше контекста»
+      description: Hide the show more context button
+      description.ru: Скрыть кнопку «Больше контекста»
+      type: class-toggle
+      default: false
+   -
+      id: show-search-filter-button
+      title: Show search filter button
+      title.ru: Кнопка «Показать фильтр»
+      description: Hide the show search filter button
+      description.ru: Скрыть кнопку «Показать фильтр»
+      type: class-toggle
+      default: false
+   -
       title: Mobile navbar order
       title.ru: Порядок меню навигации
       type: heading
